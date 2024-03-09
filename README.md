@@ -68,11 +68,11 @@ You will need to create a .env (or .env.local) file if you want to run this proj
 
 ## **Reviews Routes**:
 
-|          URL path           | HTTP Method |     Action      | Protected |
-| :-------------------------: | :---------: | :-------------: | :-------: |
-|        /api/reviews         |     GET     | Get All Reviews |    ❌     |
-| /api/reviews/:restaurant_id |    POST     |  Create Review  |    ✅     |
-| /api/reviews/:restaurant_id |   DELETE    |  Delete Review  |    ✅     |
+|                URL path                | HTTP Method |     Action      | Protected |
+| :------------------------------------: | :---------: | :-------------: | :-------: |
+|              /api/reviews              |     GET     | Get All Reviews |    ❌     |
+|      /api/reviews/:restaurant_id       |    POST     |  Create Review  |    ✅     |
+| /api/reviews/:review_id/:restaurant_id |   DELETE    |  Delete Review  |    ✅     |
 
 ## **Upload Routes**:
 

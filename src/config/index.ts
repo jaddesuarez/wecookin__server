@@ -10,7 +10,7 @@ export default (app: Express): void => {
 
   app.use(
     cors({
-      origin: [FRONTEND_URL, "https://wecookin.vercel.app/"],
+      origin: [FRONTEND_URL, "https://wecookin.vercel.app"],
     })
   );
 

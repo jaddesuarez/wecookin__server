@@ -19,6 +19,7 @@ export const getRestaurantById = (req: Request, res: Response) => {
   Restaurant.findById(restaurant_id)
     .populate({
       path: "reviews",
+      options: { sort: { createdAt: -1 } },
       populate: {
         path: "owner",
         select: "username avatar",
@@ -44,9 +45,21 @@ export const getRandomRestaurants = (req: Request, res: Response) => {
     .catch((err) => res.status(500).json({ err: err.message }));
 };
 
-export const createRestaurant = (req: Request, res: Response, next: NextFunction) => {
+export const createRestaurant = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   const extendedReq = req as ExtendedPayloadRequest;
-  const { name, neighborhood, address, location, image, cuisineType, operatingHours } = req.body;
+  const {
+    name,
+    neighborhood,
+    address,
+    location,
+    image,
+    cuisineType,
+    operatingHours,
+  } = req.body;
   const { _id: owner } = extendedReq.payload;
 
   Restaurant.create({
@@ -63,13 +76,33 @@ export const createRestaurant = (req: Request, res: Response, next: NextFunction
     .catch((err) => next(err));
 };
 
-export const editRestaurantById = (req: Request, res: Response, next: NextFunction) => {
+export const editRestaurantById = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   const { restaurant_id } = req.params;
-  const { name, neighborhood, address, location, image, cuisineType, operatingHours } = req.body;
+  const {
+    name,
+    neighborhood,
+    address,
+    location,
+    image,
+    cuisineType,
+    operatingHours,
+  } = req.body;
 
   Restaurant.findByIdAndUpdate(
     restaurant_id,
-    { name, neighborhood, address, location, image, cuisineType, operatingHours },
+    {
+      name,
+      neighborhood,
+      address,
+      location,
+      image,
+      cuisineType,
+      operatingHours,
+    },
     { new: true }
   )
     .then((editedRestaurant) => res.status(200).json(editedRestaurant))
@@ -80,6 +113,8 @@ export const deleteRestaurantById = (req: Request, res: Response) => {
   const { restaurant_id } = req.params;
 
   Restaurant.findByIdAndDelete(restaurant_id)
-    .then(() => res.status(200).json({ msg: "Restaurant successfully deleted!" }))
+    .then(() =>
+      res.status(200).json({ msg: "Restaurant successfully deleted!" })
+    )
     .catch((err) => res.status(500).json({ err: err.message }));
 };
