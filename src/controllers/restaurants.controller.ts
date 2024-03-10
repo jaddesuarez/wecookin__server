@@ -1,100 +1,62 @@
-import Restaurant from "../models/Restaurant.model";
 import { Request, Response, NextFunction } from "express";
-import { ExtendedPayloadRequest } from "../types/user.interface";
+import { ExtendedPayloadRequest } from "../types/user.types";
+import {
+  deleteRestaurantByIdService,
+  createRestaurantService,
+  editRestaurantByIdService,
+  getAllRestaurantsService,
+  getRandomRestaurantsService,
+  getRestaurantByIdService,
+} from "../services/restaurant.service";
 
-export const getAllRestaurants = (_req: Request, res: Response) => {
-  Restaurant.find()
-    .sort({ createdAt: -1 })
-    .populate("cuisineType")
-    .lean()
-    .then((restaurants) => {
-      res.status(200).json(restaurants);
-    })
-    .catch((err) => res.status(500).json({ err: err.message }));
-};
-
-export const getRestaurantById = (req: Request, res: Response) => {
-  const { restaurant_id } = req.params;
-
-  Restaurant.findById(restaurant_id)
-    .populate({
-      path: "reviews",
-      options: { sort: { createdAt: -1 } },
-      populate: {
-        path: "owner",
-        select: "username avatar",
-      },
-    })
-    .populate("cuisineType")
-    .then((restaurant) => res.status(200).json(restaurant))
-    .catch((err) => res.status(500).json({ err: err.message }));
-};
-
-export const getRestaurantByOwner = (req: Request, res: Response) => {
-  const extendedReq = req as ExtendedPayloadRequest;
-  const { _id: owner } = extendedReq.payload;
-
-  Restaurant.find({ owner })
-    .then((restaurant) => res.status(200).json(restaurant))
-    .catch((err) => res.status(500).json({ err: err.message }));
-};
-
-export const getRandomRestaurants = (req: Request, res: Response) => {
-  Restaurant.aggregate([{ $sample: { size: 10 } }])
-    .then((randomRestaurants) => res.status(200).json(randomRestaurants))
-    .catch((err) => res.status(500).json({ err: err.message }));
-};
-
-export const createRestaurant = (
+export const getAllRestaurants = async (
   req: Request,
   res: Response,
   next: NextFunction
-) => {
-  const extendedReq = req as ExtendedPayloadRequest;
-  const {
-    name,
-    neighborhood,
-    address,
-    location,
-    image,
-    cuisineType,
-    operatingHours,
-  } = req.body;
-  const { _id: owner } = extendedReq.payload;
-
-  Restaurant.create({
-    name,
-    neighborhood,
-    address,
-    location,
-    image,
-    cuisineType,
-    operatingHours,
-    owner,
-  })
-    .then((createdRestaurant) => res.status(200).json(createdRestaurant))
-    .catch((err) => next(err));
+): Promise<void> => {
+  try {
+    const restaurants = await getAllRestaurantsService();
+    res.status(200).json(restaurants);
+  } catch (error) {
+    next(error);
+  }
 };
 
-export const editRestaurantById = (
+export const getRestaurantById = async (
   req: Request,
   res: Response,
   next: NextFunction
-) => {
-  const { restaurant_id } = req.params;
-  const {
-    name,
-    neighborhood,
-    address,
-    location,
-    image,
-    cuisineType,
-    operatingHours,
-  } = req.body;
+): Promise<void> => {
+  try {
+    const { restaurant_id } = req.params;
+    const restaurant = await getRestaurantByIdService(restaurant_id);
+    res.status(200).json(restaurant);
+  } catch (error) {
+    next(error);
+  }
+};
 
-  Restaurant.findByIdAndUpdate(
-    restaurant_id,
-    {
+export const getRandomRestaurants = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
+  try {
+    const restaurants = await getRandomRestaurantsService();
+    res.status(200).json(restaurants);
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const createRestaurant = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
+  try {
+    const extendedReq = req as ExtendedPayloadRequest;
+    const {
       name,
       neighborhood,
       address,
@@ -102,19 +64,68 @@ export const editRestaurantById = (
       image,
       cuisineType,
       operatingHours,
-    },
-    { new: true }
-  )
-    .then((editedRestaurant) => res.status(200).json(editedRestaurant))
-    .catch((err) => next(err));
+    } = req.body;
+    const { _id: owner } = extendedReq.payload;
+    const newRestaurant = await createRestaurantService({
+      name,
+      neighborhood,
+      address,
+      location,
+      image,
+      cuisineType,
+      operatingHours,
+      owner,
+    });
+    res.status(200).json(newRestaurant);
+  } catch (error) {
+    next(error);
+  }
 };
 
-export const deleteRestaurantById = (req: Request, res: Response) => {
-  const { restaurant_id } = req.params;
+export const editRestaurantById = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
+  try {
+    const { restaurant_id } = req.params;
+    const extendedReq = req as ExtendedPayloadRequest;
+    const {
+      name,
+      neighborhood,
+      address,
+      location,
+      image,
+      cuisineType,
+      operatingHours,
+    } = req.body;
+    const { _id: owner } = extendedReq.payload;
+    const newRestaurant = await editRestaurantByIdService(restaurant_id, {
+      name,
+      neighborhood,
+      address,
+      location,
+      image,
+      cuisineType,
+      operatingHours,
+      owner,
+    });
+    res.status(200).json(newRestaurant);
+  } catch (error) {
+    next(error);
+  }
+};
 
-  Restaurant.findByIdAndDelete(restaurant_id)
-    .then(() =>
-      res.status(200).json({ msg: "Restaurant successfully deleted!" })
-    )
-    .catch((err) => res.status(500).json({ err: err.message }));
+export const deleteRestaurantById = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
+  try {
+    const { restaurant_id } = req.params;
+    const deletedRestaurant = await deleteRestaurantByIdService(restaurant_id);
+    res.status(200).json(deletedRestaurant);
+  } catch (error) {
+    next(error);
+  }
 };

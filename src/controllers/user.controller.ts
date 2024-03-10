@@ -1,87 +1,91 @@
-import User from "../models/User.model";
-import { ObjectId } from "mongoose";
-import Restaurant from "../models/Restaurant.model";
 import { Request, Response, NextFunction } from "express";
-import { ExtendedPayloadRequest } from "../types/user.interface";
+import { ExtendedPayloadRequest } from "../types/user.types";
+import {
+  dislikeRestaurantService,
+  editUserByIdService,
+  favoriteRestaurantsService,
+  likeRestaurantService,
+  myRestaurantsService,
+} from "../services/user.service";
 
-interface IUser {
-  _id: ObjectId;
-  createdAt: Date;
-  updatedAt: Date;
-  email: string;
-  password: string;
-  username: string;
-  role: "USER" | "ADMIN";
-  avatar: string;
-  favoriteRestaurants: ObjectId[]; // Or replace ObjectId[] with the actual type if favoriteRestaurants is populated
-}
-
-export const getFavoriteRestaurants = (req: Request, res: Response): void => {
-  const extendedReq = req as ExtendedPayloadRequest;
-  const { _id: user_id } = extendedReq.payload;
-
-  User.findById(user_id)
-    .populate("favoriteRestaurants")
-    .then((result) => {
-      const user = result?.toObject() as Document & IUser;
-      if (user && user.favoriteRestaurants)
-        // Ensure user and favoriteRestaurants exist
-        res.status(200).json(user.favoriteRestaurants);
-      else
-        res
-          .status(404)
-          .json({ error: "User not found or has no favorite restaurants" });
-    })
-    .catch((err) => res.status(500).json({ error: err.message }));
-};
-
-export const getMyRestaurants = (req: Request, res: Response): void => {
-  const extendedReq = req as ExtendedPayloadRequest;
-  const { _id: user_id } = extendedReq.payload;
-
-  Restaurant.find({ owner: user_id })
-    .then((myRestaurants) => res.status(200).json(myRestaurants))
-    .catch((err) => res.status(500).json({ error: err.message }));
-};
-
-export const editUserById = (
+export const getFavoriteRestaurants = async (
   req: Request,
   res: Response,
   next: NextFunction
-) => {
-  const extendedReq = req as ExtendedPayloadRequest;
-  const { _id: user_id } = extendedReq.payload;
-  const { username, email, avatar } = req.body;
-
-  User.findByIdAndUpdate(user_id, { username, email, avatar }, { new: true })
-    .then((editedUser) => res.status(200).json(editedUser))
-    .catch((err) => next(err));
+): Promise<void> => {
+  try {
+    const extendedReq = req as ExtendedPayloadRequest;
+    const { _id: user_id } = extendedReq.payload;
+    const loggedUser = await favoriteRestaurantsService(user_id);
+    res.status(200).json(loggedUser?.favoriteRestaurants);
+  } catch (error) {
+    next(error);
+  }
 };
 
-export const likeRestaurant = (req: Request, res: Response): void => {
-  const extendedReq = req as ExtendedPayloadRequest;
-  const { _id: user_id } = extendedReq.payload;
-  const { restaurant_id } = req.params;
-
-  User.findByIdAndUpdate(
-    user_id,
-    { $addToSet: { favoriteRestaurants: restaurant_id } },
-    { new: true }
-  )
-    .then((updatedUser) => res.status(200).json(updatedUser))
-    .catch((err) => res.status(500).json({ error: err.message }));
+export const getMyRestaurants = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
+  try {
+    const extendedReq = req as ExtendedPayloadRequest;
+    const { _id: user_id } = extendedReq.payload;
+    const myRestaurants = await myRestaurantsService(user_id);
+    res.status(200).json(myRestaurants);
+  } catch (error) {
+    next(error);
+  }
 };
 
-export const dislikeRestaurant = (req: Request, res: Response): void => {
-  const extendedReq = req as ExtendedPayloadRequest;
-  const { _id: user_id } = extendedReq.payload;
-  const { restaurant_id } = req.params;
+export const editUserById = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
+  try {
+    const extendedReq = req as ExtendedPayloadRequest;
+    const { _id: user_id } = extendedReq.payload;
+    const { username, email, avatar } = req.body;
+    const updatedUser = await editUserByIdService(user_id, {
+      username,
+      email,
+      avatar,
+    });
+    res.status(200).json(updatedUser);
+  } catch (error) {
+    next(error);
+  }
+};
 
-  User.findByIdAndUpdate(
-    user_id,
-    { $pull: { favoriteRestaurants: restaurant_id } },
-    { new: true }
-  )
-    .then((updatedUser) => res.status(200).json(updatedUser))
-    .catch((err) => res.status(500).json({ error: err.message }));
+export const likeRestaurant = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
+  try {
+    const extendedReq = req as ExtendedPayloadRequest;
+    const { _id: user_id } = extendedReq.payload;
+    const { restaurant_id } = req.params;
+    const updatedUser = await likeRestaurantService(user_id, restaurant_id);
+    res.status(200).json(updatedUser);
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const dislikeRestaurant = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
+  try {
+    const extendedReq = req as ExtendedPayloadRequest;
+    const { _id: user_id } = extendedReq.payload;
+    const { restaurant_id } = req.params;
+    const updatedUser = await dislikeRestaurantService(user_id, restaurant_id);
+    res.status(200).json(updatedUser);
+  } catch (error) {
+    next(error);
+  }
 };

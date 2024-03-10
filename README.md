@@ -50,15 +50,14 @@ You will need to create a .env (or .env.local) file if you want to run this proj
 
 ## **Restaurants Routes**:
 
-|                URL path                 | HTTP Method |             Action              | Protected |
-| :-------------------------------------: | :---------: | :-----------------------------: | :-------: |
-|         /api/restaurants/getAll         |     GET     |       Get All Restaurants       |    ❌     |
-| /api/restaurants/getById/:restaurant_id |     GET     |       Get One Restaurant        |    ❌     |
-|       /api/restaurants/getByOwner       |     GET     |    Get Restaurants By Owner     |    ✅     |
-|       /api/restaurants/getRandom        |     GET     | Get Random 10 Restaurants Token |    ❌     |
-|         /api/restaurants/create         |    POST     |        Create Restaurant        |    ✅     |
-|  /api/restaurants/edit/:restaurant_id   |     PUT     |        Update Restaurant        |    ✅     |
-| /api/restaurants/delete/:restaurant_id  |   DELETE    |        Delete Restaurant        |    ✅     |
+|                URL path                 | HTTP Method |          Action           | Protected |
+| :-------------------------------------: | :---------: | :-----------------------: | :-------: |
+|         /api/restaurants/getAll         |     GET     |    Get All Restaurants    |    ❌     |
+| /api/restaurants/getById/:restaurant_id |     GET     |    Get One Restaurant     |    ❌     |
+|       /api/restaurants/getRandom        |     GET     | Get Random 10 Restaurants |    ❌     |
+|         /api/restaurants/create         |    POST     |     Create Restaurant     |    ✅     |
+|  /api/restaurants/edit/:restaurant_id   |     PUT     |     Update Restaurant     |    ✅     |
+| /api/restaurants/delete/:restaurant_id  |   DELETE    |     Delete Restaurant     |    ✅     |
 
 ## **Cuisines Routes**:
 
@@ -68,11 +67,10 @@ You will need to create a .env (or .env.local) file if you want to run this proj
 
 ## **Reviews Routes**:
 
-|                URL path                | HTTP Method |     Action      | Protected |
-| :------------------------------------: | :---------: | :-------------: | :-------: |
-|              /api/reviews              |     GET     | Get All Reviews |    ❌     |
-|      /api/reviews/:restaurant_id       |    POST     |  Create Review  |    ✅     |
-| /api/reviews/:review_id/:restaurant_id |   DELETE    |  Delete Review  |    ✅     |
+|                URL path                | HTTP Method |    Action     | Protected |
+| :------------------------------------: | :---------: | :-----------: | :-------: |
+|      /api/reviews/:restaurant_id       |    POST     | Create Review |    ✅     |
+| /api/reviews/:review_id/:restaurant_id |   DELETE    | Delete Review |    ✅     |
 
 ## **Upload Routes**:
 

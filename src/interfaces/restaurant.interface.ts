@@ -1,6 +1,5 @@
-import { HydratedDocument } from "mongoose";
-import { TUser } from "./user.interface";
-import { TReview } from "./review.interface";
+import { TUser } from "../types/user.types";
+import { TReview } from "../types/review.types";
 
 export interface DayHours {
   hours: string;
@@ -20,9 +19,13 @@ export interface OperatingHours {
 export interface RestaurantModel {
   name: string;
   neighborhood: string;
+  address: string;
   location: {
     type: string;
-    coordinates: number[];
+    coordinates: {
+      lat: number;
+      lng: number;
+    };
   };
   image: string;
   cuisineType: string;
@@ -31,4 +34,19 @@ export interface RestaurantModel {
   reviews: TReview[];
 }
 
-export type TRestaurant = HydratedDocument<RestaurantModel>;
+export interface ICreateRestaurant {
+  name: string;
+  neighborhood: string;
+  address: string;
+  location: {
+    type: string;
+    coordinates: {
+      lat: number;
+      lng: number;
+    };
+  };
+  image: string;
+  cuisineType: string;
+  operatingHours: OperatingHours;
+  owner: string;
+}

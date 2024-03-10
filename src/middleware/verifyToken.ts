@@ -9,7 +9,10 @@ const verifyToken = expressjwt({
 });
 
 function getTokenFromHeaders(req: Request) {
-  if (req.headers.authorization && req.headers.authorization.split(" ")[0] === "Bearer") {
+  if (
+    req.headers.authorization &&
+    req.headers.authorization.split(" ")[0] === "Bearer"
+  ) {
     const token = req.headers.authorization.split(" ")[1];
     return token;
   }

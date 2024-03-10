@@ -2,7 +2,6 @@ import { Router } from "express";
 import {
   getAllRestaurants,
   getRestaurantById,
-  getRestaurantByOwner,
   getRandomRestaurants,
   createRestaurant,
   editRestaurantById,
@@ -14,7 +13,6 @@ const router = Router();
 
 router.get("/getAll", getAllRestaurants);
 router.get("/getById/:restaurant_id", getRestaurantById);
-router.get("/getByOwner", verifyToken, getRestaurantByOwner);
 router.get("/getRandom", getRandomRestaurants);
 router.post("/create", verifyToken, createRestaurant);
 router.put("/edit/:restaurant_id", verifyToken, editRestaurantById);

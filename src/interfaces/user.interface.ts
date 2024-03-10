@@ -1,6 +1,5 @@
 import { Request } from "express";
-import { Document, HydratedDocument } from "mongoose";
-import { TRestaurant } from "./restaurent.interface";
+import { TRestaurant } from "../types/restaurant.types";
 
 export interface ExtendedPayloadRequest extends Request {
   payload: {
@@ -18,4 +17,8 @@ export interface UserModel extends Document {
   favoriteRestaurants: TRestaurant["_id"][];
 }
 
-export type TUser = HydratedDocument<UserModel>;
+export interface IEditUser {
+  username: string;
+  email: string;
+  avatar: string;
+}
