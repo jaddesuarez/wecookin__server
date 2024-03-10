@@ -18,7 +18,6 @@ export const loginRepository = async (
     if (!user || !user.comparePassword(plainPassword)) {
       return { err: ["Wrong User or Password"] };
     }
-
     const authToken = user.signToken();
     return { authToken };
   });

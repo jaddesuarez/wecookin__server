@@ -5,12 +5,13 @@ import {
   loginService,
   updateTokenService,
 } from "../services/auth.service";
+import { isLoginError } from "../utils";
 
 export const signup = async (
   req: Request,
   res: Response,
   next: NextFunction
-) => {
+): Promise<void> => {
   try {
     const { email, password } = req.body;
     const username = email.split("@")[0];
@@ -25,11 +26,13 @@ export const login = async (
   req: Request,
   res: Response,
   next: NextFunction
-) => {
+): Promise<void> => {
   try {
     const { email, password } = req.body;
     const authToken = await loginService({ email, password });
-    res.status(200).json(authToken);
+    isLoginError(authToken)
+      ? res.status(401).json(authToken)
+      : res.status(200).json(authToken);
   } catch (error) {
     next(error);
   }
@@ -39,7 +42,7 @@ export const verify = async (
   req: Request,
   res: Response,
   next: NextFunction
-) => {
+): Promise<void> => {
   try {
     const extendedReq = req as ExtendedPayloadRequest;
     res.status(200).json(extendedReq.payload);
@@ -52,7 +55,7 @@ export const updateToken = async (
   req: Request,
   res: Response,
   next: NextFunction
-) => {
+): Promise<void> => {
   try {
     const extendedReq = req as ExtendedPayloadRequest;
     const user_id = extendedReq.payload._id;
