@@ -54,7 +54,7 @@ You will need to create a .env (or .env.local) file if you want to run this proj
 | :-------------------------------------: | :---------: | :-----------------------: | :-------: |
 |         /api/restaurants/getAll         |     GET     |    Get All Restaurants    |    ❌     |
 | /api/restaurants/getById/:restaurant_id |     GET     |    Get One Restaurant     |    ❌     |
-|       /api/restaurants/getRandom        |     GET     | Get Random 10 Restaurants |    ❌     |
+|       /api/restaurants/getRandom        |     GET     | Get 10 Random Restaurants |    ❌     |
 |         /api/restaurants/create         |    POST     |     Create Restaurant     |    ✅     |
 |  /api/restaurants/edit/:restaurant_id   |     PUT     |     Update Restaurant     |    ✅     |
 | /api/restaurants/delete/:restaurant_id  |   DELETE    |     Delete Restaurant     |    ✅     |
