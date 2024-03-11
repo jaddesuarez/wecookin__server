@@ -54,4 +54,9 @@ export interface TPopulatedRestaurant {
   reviews: TReview[];
 }
 
+export interface TRestaurantAvgReview {
+  rating: number;
+  totalRevirews: number;
+}
+
 export type TRestaurant = HydratedDocument<RestaurantModel>;

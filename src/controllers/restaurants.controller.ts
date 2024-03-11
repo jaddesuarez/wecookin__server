@@ -7,6 +7,7 @@ import {
   getAllRestaurantsService,
   getRandomRestaurantsService,
   getRestaurantByIdService,
+  getRestaurantAvgRatingByIdService,
 } from "../services/restaurant.service";
 
 export const getAllRestaurants = async (
@@ -31,6 +32,20 @@ export const getRestaurantById = async (
     const { restaurant_id } = req.params;
     const restaurant = await getRestaurantByIdService(restaurant_id);
     res.status(200).json(restaurant);
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const getRestaurantAvgRatingById = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): Promise<void> => {
+  try {
+    const { restaurant_id } = req.params;
+    const ratingData = await getRestaurantAvgRatingByIdService(restaurant_id);
+    res.status(200).json(ratingData);
   } catch (error) {
     next(error);
   }

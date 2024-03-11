@@ -5,8 +5,13 @@ import {
   getAllRestaurantsRepository,
   getRandomRestaurantsRepository,
   getRestaurantByIdRepository,
+  getRestaurantAvgRatingByIdRepository,
 } from "../repositories/restaurant.repository";
-import { TRestaurant, TPopulatedRestaurant } from "../types/restaurant.types";
+import {
+  TRestaurant,
+  TPopulatedRestaurant,
+  TRestaurantAvgReview,
+} from "../types/restaurant.types";
 import { ICreateRestaurant } from "../interfaces/restaurant.interface";
 import {
   restaurantIdValidation,
@@ -26,6 +31,15 @@ export const getRestaurantByIdService = async (
     restaurant_id: restaurantId,
   });
   return await getRestaurantByIdRepository(restaurant_id);
+};
+
+export const getRestaurantAvgRatingByIdService = async (
+  restaurantId: string
+): Promise<TRestaurantAvgReview | null> => {
+  const { restaurant_id } = await restaurantIdValidation.validateAsync({
+    restaurant_id: restaurantId,
+  });
+  return await getRestaurantAvgRatingByIdRepository(restaurant_id);
 };
 
 export const getRandomRestaurantsService = async (): Promise<TRestaurant[]> => {

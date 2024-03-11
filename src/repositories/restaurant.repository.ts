@@ -1,6 +1,11 @@
 import { ICreateRestaurant } from "../interfaces/restaurant.interface";
+import { IReview } from "../interfaces/review.interface";
 import Restaurant from "../models/Restaurant.model";
-import { TRestaurant, TPopulatedRestaurant } from "../types/restaurant.types";
+import {
+  TRestaurant,
+  TPopulatedRestaurant,
+  TRestaurantAvgReview,
+} from "../types/restaurant.types";
 
 export const getAllRestaurantsRepository = async (): Promise<
   TPopulatedRestaurant[]
@@ -24,6 +29,25 @@ export const getRestaurantByIdRepository = async (
       },
     })
     .populate("cuisineType");
+};
+
+export const getRestaurantAvgRatingByIdRepository = async (
+  restaurant_id: string
+): Promise<TRestaurantAvgReview | null> => {
+  const foundRestaurant = await Restaurant.findById(restaurant_id)
+    .populate("reviews")
+    .exec();
+
+  if (!foundRestaurant || !Array.isArray(foundRestaurant.reviews)) {
+    return null;
+  }
+
+  const reviews = foundRestaurant.reviews as unknown as IReview[];
+
+  const totalRating = reviews.reduce((acc, curr) => acc + curr.rating, 0);
+  const avgRating = Number((totalRating / reviews.length).toFixed(1));
+
+  return { rating: avgRating, totalRevirews: reviews.length };
 };
 
 export const getRandomRestaurantsRepository = async (): Promise<
