@@ -20,7 +20,7 @@ The deployed application can be found at the following link: [wecookinapi](https
 To install all the dependencies used in the project, simply run the command:
 
 ```
-$ yarn
+$ npm install
 ```
 
 ## Environment Variables
