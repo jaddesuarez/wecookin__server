@@ -1,0 +1,2107 @@
+{
+	"info": {
+		"_postman_id": "17831123-086b-492d-bbf0-a4e1059797ec",
+		"name": "We Cookin'",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24460890",
+		"_collection_link": "https://naughtycats.postman.co/workspace/Naughty-Cats~7e55eb31-9fcb-4f83-a9fc-74e0ab5252b2/collection/24460890-17831123-086b-492d-bbf0-a4e1059797ec?action=share&source=collection_link&creator=24460890"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "getFavoriteRestaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/getFavoriteRestaurants",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"getFavoriteRestaurants"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/users/getFavoriteRestaurants",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"users",
+										"getFavoriteRestaurants"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2915"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b63-pUI9RE4qVsd0cw9BQzxUL5YAt9M\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Mar 2024 18:34:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.713829,\n                \"lng\": -73.989667,\n                \"_id\": \"65e7617aeb9966e44cc5b0c1\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"12:00 pm - 4:00 pm, 5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e7617aeb9966e44cc5b0c0\",\n        \"name\": \"Mission Chinese Food\",\n        \"neighborhood\": \"Manhattan\",\n        \"image\": \"https://video-images.vice.com/articles/590647db9ac0f921f03ed8d9/lede/1493583856927-mcf_halloween_017.jpeg?crop=1xw:0.8439609902475619xh;center,center&resize=1200:*\",\n        \"cuisineType\": \"65e734d2cfab525b3b148637\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e77395876d1fcf66f08178\",\n            \"65e778a8876d1fcf66f081a3\",\n            \"65e77958876d1fcf66f081ab\"\n        ],\n        \"createdAt\": \"2024-03-05T18:16:26.636Z\",\n        \"updatedAt\": \"2024-03-05T19:58:16.911Z\",\n        \"__v\": 0\n    },\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.722216,\n                \"lng\": -73.987501,\n                \"_id\": \"65e761e5eb9966e44cc5b0cd\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"8:00 am - 10:30 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"8:00 am - 10:30 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"8:00 am - 10:30 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"8:00 am - 2:30 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"8:00 am - Sat\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"Open 24 hours\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"Sat - 10:30 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e761e5eb9966e44cc5b0cc\",\n        \"name\": \"Katz's Delicatessen\",\n        \"neighborhood\": \"Manhattan\",\n        \"image\": \"https://www.livingfla.com/wp-content/uploads/2019/04/katz-1-500.jpg\",\n        \"cuisineType\": \"638f1c8bb7f3872046553813\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e7751f876d1fcf66f08184\",\n            \"65e77bb0876d1fcf66f081d2\",\n            \"65e77bdc876d1fcf66f081d9\"\n        ],\n        \"createdAt\": \"2024-03-05T18:18:13.480Z\",\n        \"updatedAt\": \"2024-03-05T20:09:00.435Z\",\n        \"__v\": 0\n    },\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.743797,\n                \"lng\": -73.950652,\n                \"_id\": \"65e7624feb9966e44cc5b0e1\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"5:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e7624feb9966e44cc5b0e0\",\n        \"name\": \"Mu Ramen\",\n        \"neighborhood\": \"Queens\",\n        \"image\": \"https://resizer.otstatic.com/v2/photos/huge/25670650.jpg\",\n        \"cuisineType\": \"65e734d2cfab525b3b148637\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e7769c876d1fcf66f08198\",\n            \"65e77dd4876d1fcf66f08218\",\n            \"65e77df5876d1fcf66f0821f\"\n        ],\n        \"createdAt\": \"2024-03-05T18:19:59.971Z\",\n        \"updatedAt\": \"2024-03-05T20:17:57.385Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "likeRestaurant",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/likeRestaurant/:restaurant_id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"likeRestaurant",
+								":restaurant_id"
+							],
+							"variable": [
+								{
+									"key": "restaurant_id",
+									"value": "65e76269eb9966e44cc5b0e4"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/users/likeRestaurant/:restaurant_id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"users",
+										"likeRestaurant",
+										":restaurant_id"
+									],
+									"variable": [
+										{
+											"key": "restaurant_id",
+											"value": "65e76269eb9966e44cc5b0e4"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "473"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d9-mxJUtpTa72f1zo1C5E7qzqUxbo8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 20:23:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"65aa9eac5e7211c08fed7ef8\",\n    \"username\": \"yayi\",\n    \"email\": \"yayi@gmail.com\",\n    \"password\": \"$2a$10$73UQyByCpcmOtKcQXlQcoeERfEapqGxpOxvWZ43CNhs1zzubsTvN2\",\n    \"avatar\": \"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80\",\n    \"favoriteRestaurants\": [\n        \"65e76269eb9966e44cc5b0e4\"\n    ],\n    \"createdAt\": \"2024-01-19T16:09:16.055Z\",\n    \"updatedAt\": \"2024-03-05T20:23:52.628Z\",\n    \"__v\": 0,\n    \"role\": \"ADMIN\"\n}"
+						}
+					]
+				},
+				{
+					"name": "dislikeRestaurant",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/dislikeRestaurant/:restaurant_id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"dislikeRestaurant",
+								":restaurant_id"
+							],
+							"variable": [
+								{
+									"key": "restaurant_id",
+									"value": "65e76269eb9966e44cc5b0e4"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/users/dislikeRestaurant/:restaurant_id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"users",
+										"dislikeRestaurant",
+										":restaurant_id"
+									],
+									"variable": [
+										{
+											"key": "restaurant_id",
+											"value": "65e76269eb9966e44cc5b0e4"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "447"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1bf-umJQeO5iz4zvuTd55DRqtBoPcNQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 20:24:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"65aa9eac5e7211c08fed7ef8\",\n    \"username\": \"yayi\",\n    \"email\": \"yayi@gmail.com\",\n    \"password\": \"$2a$10$73UQyByCpcmOtKcQXlQcoeERfEapqGxpOxvWZ43CNhs1zzubsTvN2\",\n    \"avatar\": \"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80\",\n    \"favoriteRestaurants\": [],\n    \"createdAt\": \"2024-01-19T16:09:16.055Z\",\n    \"updatedAt\": \"2024-03-05T20:24:16.984Z\",\n    \"__v\": 0,\n    \"role\": \"ADMIN\"\n}"
+						}
+					]
+				},
+				{
+					"name": "getMyRestaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/getMyRestaurants",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"getMyRestaurants"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/users/getMyRestaurants",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"users",
+										"getMyRestaurants"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "10416"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28b0-SHRUbd5V8kQP+kbCZPGXD+1s88M\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 Mar 2024 19:04:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.713829,\n                \"lng\": -73.989667,\n                \"_id\": \"65e7617aeb9966e44cc5b0c1\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"12:00 pm - 4:00 pm, 5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e7617aeb9966e44cc5b0c0\",\n        \"name\": \"Mission Chinese Food\",\n        \"neighborhood\": \"Manhattan\",\n        \"image\": \"https://video-images.vice.com/articles/590647db9ac0f921f03ed8d9/lede/1493583856927-mcf_halloween_017.jpeg?crop=1xw:0.8439609902475619xh;center,center&resize=1200:*\",\n        \"cuisineType\": \"65e734d2cfab525b3b148637\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"createdAt\": \"2024-03-05T18:16:26.636Z\",\n        \"updatedAt\": \"2024-03-11T08:15:59.084Z\",\n        \"__v\": 0,\n        \"address\": \"171 E Broadway, New York, NY 10002\",\n        \"reviews\": [\n            \"65e77395876d1fcf66f08178\",\n            \"65e778a8876d1fcf66f081a3\",\n            \"65e77958876d1fcf66f081ab\",\n            \"65ecec802708d75463c068f6\"\n        ]\n    },\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.683555,\n                \"lng\": -73.966393,\n                \"_id\": \"65e761bfeb9966e44cc5b0c5\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"5:00 pm - 11:30 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"12:00 pm - 3:00 pm, 5:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e761bfeb9966e44cc5b0c4\",\n        \"name\": \"Emily\",\n        \"neighborhood\": \"Brooklyn\",\n        \"image\": \"https://media-cdn.tripadvisor.com/media/photo-s/17/07/cd/40/the-colony-and-vodka.jpg\",\n        \"cuisineType\": \"65e73470cfab525b3b148636\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"createdAt\": \"2024-03-05T18:17:35.833Z\",\n        \"updatedAt\": \"2024-03-10T12:45:31.405Z\",\n        \"__v\": 0,\n        \"address\": \"919 Fulton St, Brooklyn, NY 11238\",\n        \"reviews\": [\n            \"65e779ec876d1fcf66f081b6\",\n            \"65e7743c876d1fcf66f0817c\",\n            \"65e77a40876d1fcf66f081bd\"\n        ]\n    },\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.747143,\n                \"lng\": -73.985414,\n                \"_id\": \"65e761d3eb9966e44cc5b0c9\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"11:30 am - 6:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"11:30 am - 6:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e761d3eb9966e44cc5b0c8\",\n        \"name\": \"Kang Ho Dong Baekjeong\",\n        \"neighborhood\": \"Manhattan\",\n        \"image\": \"https://media-cdn.tripadvisor.com/media/photo-s/06/da/d6/de/kang-hodong-baekjeong.jpg\",\n        \"cuisineType\": \"65e734d2cfab525b3b148637\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e774ed876d1fcf66f08180\",\n            \"65e77aa0876d1fcf66f081c4\",\n            \"65e77ac5876d1fcf66f081cb\"\n        ],\n        \"createdAt\": \"2024-03-05T18:17:55.714Z\",\n        \"updatedAt\": \"2024-03-05T20:04:21.661Z\",\n        \"__v\": 0,\n        \"address\": \"1 E 32nd St, New York, NY 10016\"\n    },\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.722216,\n                \"lng\": -73.987501,\n                \"_id\": \"65e761e5eb9966e44cc5b0cd\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"8:00 am - 10:30 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"8:00 am - 10:30 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"8:00 am - 10:30 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"8:00 am - 2:30 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"8:00 am - Sat\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"Open 24 hours\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"Sat - 10:30 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e761e5eb9966e44cc5b0cc\",\n        \"name\": \"Katz's Delicatessen\",\n        \"neighborhood\": \"Manhattan\",\n        \"image\": \"https://www.livingfla.com/wp-content/uploads/2019/04/katz-1-500.jpg\",\n        \"cuisineType\": \"638f1c8bb7f3872046553813\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e7751f876d1fcf66f08184\",\n            \"65e77bb0876d1fcf66f081d2\",\n            \"65e77bdc876d1fcf66f081d9\"\n        ],\n        \"createdAt\": \"2024-03-05T18:18:13.480Z\",\n        \"updatedAt\": \"2024-03-05T20:09:00.435Z\",\n        \"__v\": 0,\n        \"address\": \"205 E Houston St, New York, NY 10002\"\n    },\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.705089,\n                \"lng\": -73.933585,\n                \"_id\": \"65e761fceb9966e44cc5b0d1\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"10:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"10:00 am - 12:00 am\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e761fceb9966e44cc5b0d0\",\n        \"name\": \"Roberta's Pizza\",\n        \"neighborhood\": \"Brooklyn\",\n        \"image\": \"https://c8.alamy.com/compes/dp9a5f/robertas-pizza-restaurant-en-east-williamsburg-de-brooklyn-dp9a5f.jpg\",\n        \"cuisineType\": \"65e73470cfab525b3b148636\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"createdAt\": \"2024-03-05T18:18:36.548Z\",\n        \"updatedAt\": \"2024-03-05T20:11:09.846Z\",\n        \"__v\": 0,\n        \"address\": \"261 Moore St, Brooklyn, NY 11206\",\n        \"reviews\": [\n            \"65e77c27876d1fcf66f081e0\",\n            \"65e77c5d876d1fcf66f081e7\",\n            \"65e775fa876d1fcf66f08188\"\n        ]\n    },\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.674925,\n                \"lng\": -74.016162,\n                \"_id\": \"65e76218eb9966e44cc5b0d5\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"\",\n                \"isOpen\": false\n            },\n            \"Tuesday\": {\n                \"hours\": \"12:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"12:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"12:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"12:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"12:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"12:00 pm - 9:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e76218eb9966e44cc5b0d4\",\n        \"name\": \"Hometown BBQ\",\n        \"neighborhood\": \"Brooklyn\",\n        \"image\": \"https://images.unsplash.com/photo-1534993160870-eaba9d2bb3b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n        \"cuisineType\": \"638f1c8bb7f3872046553813\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"createdAt\": \"2024-03-05T18:19:04.076Z\",\n        \"updatedAt\": \"2024-03-05T20:12:46.992Z\",\n        \"__v\": 0,\n        \"address\": \"454 Van Brunt St, Brooklyn, NY 11231\",\n        \"reviews\": [\n            \"65e77620876d1fcf66f0818c\",\n            \"65e77c9f876d1fcf66f081ee\",\n            \"65e9c3a4eb8bfe6b981ed7e4\"\n        ]\n    },\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.727397,\n                \"lng\": -73.983645,\n                \"_id\": \"65e7622deb9966e44cc5b0d9\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"\",\n                \"isOpen\": false\n            },\n            \"Wednesday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e7622deb9966e44cc5b0d8\",\n        \"name\": \"Superiority Burger\",\n        \"neighborhood\": \"Manhattan\",\n        \"image\": \"http://www.wazwu.com/blog/wp-content/uploads/2015/10/img_6912.jpg\",\n        \"cuisineType\": \"638f1c8bb7f3872046553813\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e77656876d1fcf66f08190\",\n            \"65e77d03876d1fcf66f081fc\",\n            \"65e77d28876d1fcf66f08203\"\n        ],\n        \"createdAt\": \"2024-03-05T18:19:25.055Z\",\n        \"updatedAt\": \"2024-03-05T20:14:32.811Z\",\n        \"__v\": 0,\n        \"address\": \"430 E 9th St, New York, NY 10009\"\n    },\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.726584,\n                \"lng\": -74.002082,\n                \"_id\": \"65e7623deb9966e44cc5b0dd\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:30 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"10:00 am - 3:00 pm, 5:30 pm - 11:30 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"10:00 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e7623deb9966e44cc5b0dc\",\n        \"name\": \"The Dutch\",\n        \"neighborhood\": \"Manhattan\",\n        \"image\": \"https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=3085&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n        \"cuisineType\": \"638f1c8bb7f3872046553813\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e77678876d1fcf66f08194\",\n            \"65e77d72876d1fcf66f0820a\",\n            \"65e77d9d876d1fcf66f08211\"\n        ],\n        \"createdAt\": \"2024-03-05T18:19:41.132Z\",\n        \"updatedAt\": \"2024-03-05T20:16:29.684Z\",\n        \"__v\": 0,\n        \"address\": \"131 Sullivan St, New York, NY 10012\"\n    },\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.743797,\n                \"lng\": -73.950652,\n                \"_id\": \"65e7624feb9966e44cc5b0e1\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"5:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e7624feb9966e44cc5b0e0\",\n        \"name\": \"Mu Ramen\",\n        \"neighborhood\": \"Queens\",\n        \"image\": \"https://resizer.otstatic.com/v2/photos/huge/25670650.jpg\",\n        \"cuisineType\": \"65e734d2cfab525b3b148637\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e7769c876d1fcf66f08198\",\n            \"65e77dd4876d1fcf66f08218\",\n            \"65e77df5876d1fcf66f0821f\"\n        ],\n        \"createdAt\": \"2024-03-05T18:19:59.971Z\",\n        \"updatedAt\": \"2024-03-05T20:17:57.385Z\",\n        \"__v\": 0,\n        \"address\": \"1209 Jackson Ave, Queens, NY 11101\"\n    },\n    {\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.743394,\n                \"lng\": -73.954235,\n                \"_id\": \"65e76269eb9966e44cc5b0e5\"\n            }\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            }\n        },\n        \"_id\": \"65e76269eb9966e44cc5b0e4\",\n        \"name\": \"Casa Enrique\",\n        \"neighborhood\": \"Queens\",\n        \"image\": \"https://i.pinimg.com/474x/47/b1/d3/47b1d3175589f19f58a35cfcd78b3e73--city-restaurants-mexican-restaurants.jpg\",\n        \"cuisineType\": \"638f1d33b7f3872046553825\",\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e776bc876d1fcf66f0819c\",\n            \"65e77984876d1fcf66f081af\",\n            \"65e77e31876d1fcf66f08226\",\n            \"65ecec982708d75463c06911\"\n        ],\n        \"createdAt\": \"2024-03-05T18:20:25.748Z\",\n        \"updatedAt\": \"2024-03-10T18:17:43.356Z\",\n        \"__v\": 0,\n        \"address\": \"5-48 49th Ave, Queens, NY 11101\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "ediUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "yayi edit test",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "yayi@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"value": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/users/editUser",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"editUser"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "yayi edit test",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "yayi@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "avatar",
+											"value": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/users/editUser",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"users",
+										"editUser"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "564"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"234-/SUFN8uZdvwhFAyRMUI8rqTL4ho\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 Mar 2024 19:25:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"65aa9eac5e7211c08fed7ef8\",\n    \"username\": \"yayi edit test\",\n    \"email\": \"yayi@gmail.com\",\n    \"password\": \"$2a$10$73UQyByCpcmOtKcQXlQcoeERfEapqGxpOxvWZ43CNhs1zzubsTvN2\",\n    \"avatar\": \"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80\",\n    \"favoriteRestaurants\": [\n        \"65e7617aeb9966e44cc5b0c0\",\n        \"65e761bfeb9966e44cc5b0c4\",\n        \"65e761d3eb9966e44cc5b0c8\",\n        \"65e761fceb9966e44cc5b0d0\"\n    ],\n    \"createdAt\": \"2024-01-19T16:09:16.055Z\",\n    \"updatedAt\": \"2024-03-11T19:25:50.236Z\",\n    \"__v\": 0,\n    \"role\": \"ADMIN\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "Steeve@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/auth/signup",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "Steve@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/auth/signup",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"auth",
+										"signup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "512"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"200-aqwMWrqXk9fxTMsLTVXRLuSIFXo\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 17:06:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"authToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWU3NTEyZmYyMjZiMDY2ZDBjN2YzZDMiLCJlbWFpbCI6InN0ZXZlQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiU3RldmUiLCJhdmF0YXIiOiJodHRwczovL3Jlcy5jbG91ZGluYXJ5LmNvbS9kYWduZGxmaGovaW1hZ2UvdXBsb2FkL3YxNjg0NzY1NDU2L3BpY3R1cmUtcHJvZmlsZS1pY29uLW1hbGUtaWNvbi1odW1hbi1vci1wZW9wbGUtc2lnbi1hbmQtc3ltYm9sLWZyZWUtdmVjdG9yX3ExYXg3aS5qcGciLCJmYXZvcml0ZVJlc3RhdXJhbnRzIjpbXSwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MDk2NTg0MTUsImV4cCI6MTcwOTgzMTIxNX0.33QegLz-xHN6VHRIk3zFjZN1CvKHaXsyDES_SRrcyv0\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "yayi@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/auth/login",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "Steve@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/auth/login",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "512"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"200-urQEKP1Dxm329ldmZNFCyNKNP9A\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 17:16:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"authToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWU3NTEyZmYyMjZiMDY2ZDBjN2YzZDMiLCJlbWFpbCI6InN0ZXZlQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiU3RldmUiLCJhdmF0YXIiOiJodHRwczovL3Jlcy5jbG91ZGluYXJ5LmNvbS9kYWduZGxmaGovaW1hZ2UvdXBsb2FkL3YxNjg0NzY1NDU2L3BpY3R1cmUtcHJvZmlsZS1pY29uLW1hbGUtaWNvbi1odW1hbi1vci1wZW9wbGUtc2lnbi1hbmQtc3ltYm9sLWZyZWUtdmVjdG9yX3ExYXg3aS5qcGciLCJmYXZvcml0ZVJlc3RhdXJhbnRzIjpbXSwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MDk2NTg5NzEsImV4cCI6MTcwOTgzMTc3MX0.6A_hqjMJWEXAI9vhgx7TYugDWN6GTOJAyldeWvvKU1o\"\n}"
+						}
+					]
+				},
+				{
+					"name": "verify",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/auth/verify",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"auth",
+								"verify"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/auth/verify",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"auth",
+										"verify"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "311"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"137-0efh5g3fSNtutT4X+vAApPxQMoA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 17:22:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"65e7512ff226b066d0c7f3d3\",\n    \"email\": \"steve@gmail.com\",\n    \"username\": \"Steve\",\n    \"avatar\": \"https://res.cloudinary.com/dagndlfhj/image/upload/v1684765456/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector_q1ax7i.jpg\",\n    \"favoriteRestaurants\": [],\n    \"role\": \"USER\",\n    \"iat\": 1709658971,\n    \"exp\": 1709831771\n}"
+						}
+					]
+				},
+				{
+					"name": "updateToken",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/auth/updateToken",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"auth",
+								"updateToken"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/auth/updateToken",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"auth",
+										"updateToken"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "498"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f2-002p8LWl9BVp9Vgf6QMjU6+Zvas\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 17:23:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWU3NTEyZmYyMjZiMDY2ZDBjN2YzZDMiLCJlbWFpbCI6InN0ZXZlQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiU3RldmUiLCJhdmF0YXIiOiJodHRwczovL3Jlcy5jbG91ZGluYXJ5LmNvbS9kYWduZGxmaGovaW1hZ2UvdXBsb2FkL3YxNjg0NzY1NDU2L3BpY3R1cmUtcHJvZmlsZS1pY29uLW1hbGUtaWNvbi1odW1hbi1vci1wZW9wbGUtc2lnbi1hbmQtc3ltYm9sLWZyZWUtdmVjdG9yX3ExYXg3aS5qcGciLCJmYXZvcml0ZVJlc3RhdXJhbnRzIjpbXSwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MDk2NTk0MTIsImV4cCI6MTcwOTgzMjIxMn0.3zeudRAjRUtJ0Eytmu39_vx0CwdfhuQBrgjVHLB3Tuw\""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Restaurant",
+			"item": [
+				{
+					"name": "getAllRestaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/restaurants/getAll",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"restaurants",
+								"getAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/restaurants/getAll",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"restaurants",
+										"getAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "10264"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2818-wipq+ZkXN8Y6foYuoszOITQTY+k\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 06 Mar 2024 19:18:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"65e76269eb9966e44cc5b0e4\",\n        \"name\": \"Casa Enrique\",\n        \"neighborhood\": \"Queens\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.743394,\n                \"lng\": -73.954235,\n                \"_id\": \"65e76269eb9966e44cc5b0e5\"\n            }\n        },\n        \"image\": \"https://i.pinimg.com/474x/47/b1/d3/47b1d3175589f19f58a35cfcd78b3e73--city-restaurants-mexican-restaurants.jpg\",\n        \"cuisineType\": {\n            \"_id\": \"638f1d33b7f3872046553825\",\n            \"cuisine\": \"Mexican\"\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e776bc876d1fcf66f0819c\",\n            \"65e77984876d1fcf66f081af\",\n            \"65e77e31876d1fcf66f08226\"\n        ],\n        \"createdAt\": \"2024-03-05T18:20:25.748Z\",\n        \"updatedAt\": \"2024-03-05T20:18:57.140Z\",\n        \"__v\": 0,\n        \"address\": \"5-48 49th Ave, Queens, NY 11101\"\n    },\n    {\n        \"_id\": \"65e7624feb9966e44cc5b0e0\",\n        \"name\": \"Mu Ramen\",\n        \"neighborhood\": \"Queens\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.743797,\n                \"lng\": -73.950652,\n                \"_id\": \"65e7624feb9966e44cc5b0e1\"\n            }\n        },\n        \"image\": \"https://resizer.otstatic.com/v2/photos/huge/25670650.jpg\",\n        \"cuisineType\": {\n            \"_id\": \"65e734d2cfab525b3b148637\",\n            \"cuisine\": \"Asian\"\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"5:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e7769c876d1fcf66f08198\",\n            \"65e77dd4876d1fcf66f08218\",\n            \"65e77df5876d1fcf66f0821f\"\n        ],\n        \"createdAt\": \"2024-03-05T18:19:59.971Z\",\n        \"updatedAt\": \"2024-03-05T20:17:57.385Z\",\n        \"__v\": 0,\n        \"address\": \"1209 Jackson Ave, Queens, NY 11101\"\n    },\n    {\n        \"_id\": \"65e7623deb9966e44cc5b0dc\",\n        \"name\": \"The Dutch\",\n        \"neighborhood\": \"Manhattan\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.726584,\n                \"lng\": -74.002082,\n                \"_id\": \"65e7623deb9966e44cc5b0dd\"\n            }\n        },\n        \"image\": \"https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=3085&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n        \"cuisineType\": {\n            \"_id\": \"638f1c8bb7f3872046553813\",\n            \"cuisine\": \"American\"\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:30 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"10:00 am - 3:00 pm, 5:30 pm - 11:30 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"10:00 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e77678876d1fcf66f08194\",\n            \"65e77d72876d1fcf66f0820a\",\n            \"65e77d9d876d1fcf66f08211\"\n        ],\n        \"createdAt\": \"2024-03-05T18:19:41.132Z\",\n        \"updatedAt\": \"2024-03-05T20:16:29.684Z\",\n        \"__v\": 0,\n        \"address\": \"131 Sullivan St, New York, NY 10012\"\n    },\n    {\n        \"_id\": \"65e7622deb9966e44cc5b0d8\",\n        \"name\": \"Superiority Burger\",\n        \"neighborhood\": \"Manhattan\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.727397,\n                \"lng\": -73.983645,\n                \"_id\": \"65e7622deb9966e44cc5b0d9\"\n            }\n        },\n        \"image\": \"http://www.wazwu.com/blog/wp-content/uploads/2015/10/img_6912.jpg\",\n        \"cuisineType\": {\n            \"_id\": \"638f1c8bb7f3872046553813\",\n            \"cuisine\": \"American\"\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"\",\n                \"isOpen\": false\n            },\n            \"Wednesday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e77656876d1fcf66f08190\",\n            \"65e77d03876d1fcf66f081fc\",\n            \"65e77d28876d1fcf66f08203\"\n        ],\n        \"createdAt\": \"2024-03-05T18:19:25.055Z\",\n        \"updatedAt\": \"2024-03-05T20:14:32.811Z\",\n        \"__v\": 0,\n        \"address\": \"430 E 9th St, New York, NY 10009\"\n    },\n    {\n        \"_id\": \"65e76218eb9966e44cc5b0d4\",\n        \"name\": \"Hometown BBQ\",\n        \"neighborhood\": \"Brooklyn\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.674925,\n                \"lng\": -74.016162,\n                \"_id\": \"65e76218eb9966e44cc5b0d5\"\n            }\n        },\n        \"image\": \"https://images.unsplash.com/photo-1534993160870-eaba9d2bb3b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n        \"cuisineType\": {\n            \"_id\": \"638f1c8bb7f3872046553813\",\n            \"cuisine\": \"American\"\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"\",\n                \"isOpen\": false\n            },\n            \"Tuesday\": {\n                \"hours\": \"12:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"12:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"12:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"12:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"12:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"12:00 pm - 9:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"createdAt\": \"2024-03-05T18:19:04.076Z\",\n        \"updatedAt\": \"2024-03-05T20:12:46.992Z\",\n        \"__v\": 0,\n        \"address\": \"454 Van Brunt St, Brooklyn, NY 11231\"\n    },\n    {\n        \"_id\": \"65e761fceb9966e44cc5b0d0\",\n        \"name\": \"Roberta's Pizza\",\n        \"neighborhood\": \"Brooklyn\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.705089,\n                \"lng\": -73.933585,\n                \"_id\": \"65e761fceb9966e44cc5b0d1\"\n            }\n        },\n        \"image\": \"https://c8.alamy.com/compes/dp9a5f/robertas-pizza-restaurant-en-east-williamsburg-de-brooklyn-dp9a5f.jpg\",\n        \"cuisineType\": {\n            \"_id\": \"65e73470cfab525b3b148636\",\n            \"cuisine\": \"Pizza\"\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"10:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"10:00 am - 12:00 am\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"createdAt\": \"2024-03-05T18:18:36.548Z\",\n        \"updatedAt\": \"2024-03-05T20:11:09.846Z\",\n        \"__v\": 0,\n        \"address\": \"261 Moore St, Brooklyn, NY 11206\"\n    },\n    {\n        \"_id\": \"65e761e5eb9966e44cc5b0cc\",\n        \"name\": \"Katz's Delicatessen\",\n        \"neighborhood\": \"Manhattan\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.722216,\n                \"lng\": -73.987501,\n                \"_id\": \"65e761e5eb9966e44cc5b0cd\"\n            }\n        },\n        \"image\": \"https://www.livingfla.com/wp-content/uploads/2019/04/katz-1-500.jpg\",\n        \"cuisineType\": {\n            \"_id\": \"638f1c8bb7f3872046553813\",\n            \"cuisine\": \"American\"\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"8:00 am - 10:30 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"8:00 am - 10:30 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"8:00 am - 10:30 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"8:00 am - 2:30 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"8:00 am - Sat\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"Open 24 hours\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"Sat - 10:30 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e7751f876d1fcf66f08184\",\n            \"65e77bb0876d1fcf66f081d2\",\n            \"65e77bdc876d1fcf66f081d9\"\n        ],\n        \"createdAt\": \"2024-03-05T18:18:13.480Z\",\n        \"updatedAt\": \"2024-03-05T20:09:00.435Z\",\n        \"__v\": 0,\n        \"address\": \"205 E Houston St, New York, NY 10002\"\n    },\n    {\n        \"_id\": \"65e761d3eb9966e44cc5b0c8\",\n        \"name\": \"Kang Ho Dong Baekjeong\",\n        \"neighborhood\": \"Manhattan\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.747143,\n                \"lng\": -73.985414,\n                \"_id\": \"65e761d3eb9966e44cc5b0c9\"\n            }\n        },\n        \"image\": \"https://media-cdn.tripadvisor.com/media/photo-s/06/da/d6/de/kang-hodong-baekjeong.jpg\",\n        \"cuisineType\": {\n            \"_id\": \"65e734d2cfab525b3b148637\",\n            \"cuisine\": \"Asian\"\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"11:30 am - 6:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"11:30 am - 6:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e774ed876d1fcf66f08180\",\n            \"65e77aa0876d1fcf66f081c4\",\n            \"65e77ac5876d1fcf66f081cb\"\n        ],\n        \"createdAt\": \"2024-03-05T18:17:55.714Z\",\n        \"updatedAt\": \"2024-03-05T20:04:21.661Z\",\n        \"__v\": 0,\n        \"address\": \"1 E 32nd St, New York, NY 10016\"\n    },\n    {\n        \"_id\": \"65e761bfeb9966e44cc5b0c4\",\n        \"name\": \"Emily\",\n        \"neighborhood\": \"Brooklyn\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.683555,\n                \"lng\": -73.966393,\n                \"_id\": \"65e761bfeb9966e44cc5b0c5\"\n            }\n        },\n        \"image\": \"https://media-cdn.tripadvisor.com/media/photo-s/17/07/cd/40/the-colony-and-vodka.jpg\",\n        \"cuisineType\": {\n            \"_id\": \"65e73470cfab525b3b148636\",\n            \"cuisine\": \"Pizza\"\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"5:00 pm - 11:30 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"12:00 pm - 3:00 pm, 5:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"createdAt\": \"2024-03-05T18:17:35.833Z\",\n        \"updatedAt\": \"2024-03-05T20:02:08.076Z\",\n        \"__v\": 0,\n        \"address\": \"919 Fulton St, Brooklyn, NY 11238\"\n    },\n    {\n        \"_id\": \"65e7617aeb9966e44cc5b0c0\",\n        \"name\": \"Mission Chinese Food\",\n        \"neighborhood\": \"Manhattan\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.713829,\n                \"lng\": -73.989667,\n                \"_id\": \"65e7617aeb9966e44cc5b0c1\"\n            }\n        },\n        \"image\": \"https://video-images.vice.com/articles/590647db9ac0f921f03ed8d9/lede/1493583856927-mcf_halloween_017.jpeg?crop=1xw:0.8439609902475619xh;center,center&resize=1200:*\",\n        \"cuisineType\": {\n            \"_id\": \"65e734d2cfab525b3b148637\",\n            \"cuisine\": \"Asian\"\n        },\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"12:00 pm - 4:00 pm, 5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"createdAt\": \"2024-03-05T18:16:26.636Z\",\n        \"updatedAt\": \"2024-03-05T19:58:16.911Z\",\n        \"__v\": 0,\n        \"address\": \"171 E Broadway, New York, NY 10002\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getRandomRestaurants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/restaurants/getRandom",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"restaurants",
+								"getRandom"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/restaurants/getRandom",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"restaurants",
+										"getRandom"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "10416"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28b0-pUB+K1T1grKK+a+urjHeMB5nfnA\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 Mar 2024 19:06:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"65e76218eb9966e44cc5b0d4\",\n        \"name\": \"Hometown BBQ\",\n        \"neighborhood\": \"Brooklyn\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.674925,\n                \"lng\": -74.016162,\n                \"_id\": \"65e76218eb9966e44cc5b0d5\"\n            }\n        },\n        \"image\": \"https://images.unsplash.com/photo-1534993160870-eaba9d2bb3b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n        \"cuisineType\": \"638f1c8bb7f3872046553813\",\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"\",\n                \"isOpen\": false\n            },\n            \"Tuesday\": {\n                \"hours\": \"12:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"12:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"12:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"12:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"12:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"12:00 pm - 9:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"createdAt\": \"2024-03-05T18:19:04.076Z\",\n        \"updatedAt\": \"2024-03-05T20:12:46.992Z\",\n        \"__v\": 0,\n        \"address\": \"454 Van Brunt St, Brooklyn, NY 11231\",\n        \"reviews\": [\n            \"65e77620876d1fcf66f0818c\",\n            \"65e77c9f876d1fcf66f081ee\",\n            \"65e9c3a4eb8bfe6b981ed7e4\"\n        ]\n    },\n    {\n        \"_id\": \"65e761e5eb9966e44cc5b0cc\",\n        \"name\": \"Katz's Delicatessen\",\n        \"neighborhood\": \"Manhattan\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.722216,\n                \"lng\": -73.987501,\n                \"_id\": \"65e761e5eb9966e44cc5b0cd\"\n            }\n        },\n        \"image\": \"https://www.livingfla.com/wp-content/uploads/2019/04/katz-1-500.jpg\",\n        \"cuisineType\": \"638f1c8bb7f3872046553813\",\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"8:00 am - 10:30 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"8:00 am - 10:30 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"8:00 am - 10:30 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"8:00 am - 2:30 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"8:00 am - Sat\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"Open 24 hours\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"Sat - 10:30 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e7751f876d1fcf66f08184\",\n            \"65e77bb0876d1fcf66f081d2\",\n            \"65e77bdc876d1fcf66f081d9\"\n        ],\n        \"createdAt\": \"2024-03-05T18:18:13.480Z\",\n        \"updatedAt\": \"2024-03-05T20:09:00.435Z\",\n        \"__v\": 0,\n        \"address\": \"205 E Houston St, New York, NY 10002\"\n    },\n    {\n        \"_id\": \"65e7617aeb9966e44cc5b0c0\",\n        \"name\": \"Mission Chinese Food\",\n        \"neighborhood\": \"Manhattan\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.713829,\n                \"lng\": -73.989667,\n                \"_id\": \"65e7617aeb9966e44cc5b0c1\"\n            }\n        },\n        \"image\": \"https://video-images.vice.com/articles/590647db9ac0f921f03ed8d9/lede/1493583856927-mcf_halloween_017.jpeg?crop=1xw:0.8439609902475619xh;center,center&resize=1200:*\",\n        \"cuisineType\": \"65e734d2cfab525b3b148637\",\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"12:00 pm - 4:00 pm, 5:30 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"createdAt\": \"2024-03-05T18:16:26.636Z\",\n        \"updatedAt\": \"2024-03-11T08:15:59.084Z\",\n        \"__v\": 0,\n        \"address\": \"171 E Broadway, New York, NY 10002\",\n        \"reviews\": [\n            \"65e77395876d1fcf66f08178\",\n            \"65e778a8876d1fcf66f081a3\",\n            \"65e77958876d1fcf66f081ab\",\n            \"65ecec802708d75463c068f6\"\n        ]\n    },\n    {\n        \"_id\": \"65e7622deb9966e44cc5b0d8\",\n        \"name\": \"Superiority Burger\",\n        \"neighborhood\": \"Manhattan\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.727397,\n                \"lng\": -73.983645,\n                \"_id\": \"65e7622deb9966e44cc5b0d9\"\n            }\n        },\n        \"image\": \"http://www.wazwu.com/blog/wp-content/uploads/2015/10/img_6912.jpg\",\n        \"cuisineType\": \"638f1c8bb7f3872046553813\",\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"\",\n                \"isOpen\": false\n            },\n            \"Wednesday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"11:30 am - 10:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e77656876d1fcf66f08190\",\n            \"65e77d03876d1fcf66f081fc\",\n            \"65e77d28876d1fcf66f08203\"\n        ],\n        \"createdAt\": \"2024-03-05T18:19:25.055Z\",\n        \"updatedAt\": \"2024-03-05T20:14:32.811Z\",\n        \"__v\": 0,\n        \"address\": \"430 E 9th St, New York, NY 10009\"\n    },\n    {\n        \"_id\": \"65e76269eb9966e44cc5b0e4\",\n        \"name\": \"Casa Enrique\",\n        \"neighborhood\": \"Queens\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.743394,\n                \"lng\": -73.954235,\n                \"_id\": \"65e76269eb9966e44cc5b0e5\"\n            }\n        },\n        \"image\": \"https://i.pinimg.com/474x/47/b1/d3/47b1d3175589f19f58a35cfcd78b3e73--city-restaurants-mexican-restaurants.jpg\",\n        \"cuisineType\": \"638f1d33b7f3872046553825\",\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:00 pm - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e776bc876d1fcf66f0819c\",\n            \"65e77984876d1fcf66f081af\",\n            \"65e77e31876d1fcf66f08226\",\n            \"65ecec982708d75463c06911\"\n        ],\n        \"createdAt\": \"2024-03-05T18:20:25.748Z\",\n        \"updatedAt\": \"2024-03-10T18:17:43.356Z\",\n        \"__v\": 0,\n        \"address\": \"5-48 49th Ave, Queens, NY 11101\"\n    },\n    {\n        \"_id\": \"65e761fceb9966e44cc5b0d0\",\n        \"name\": \"Roberta's Pizza\",\n        \"neighborhood\": \"Brooklyn\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.705089,\n                \"lng\": -73.933585,\n                \"_id\": \"65e761fceb9966e44cc5b0d1\"\n            }\n        },\n        \"image\": \"https://c8.alamy.com/compes/dp9a5f/robertas-pizza-restaurant-en-east-williamsburg-de-brooklyn-dp9a5f.jpg\",\n        \"cuisineType\": \"65e73470cfab525b3b148636\",\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"11:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"10:00 am - 12:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"10:00 am - 12:00 am\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"createdAt\": \"2024-03-05T18:18:36.548Z\",\n        \"updatedAt\": \"2024-03-05T20:11:09.846Z\",\n        \"__v\": 0,\n        \"address\": \"261 Moore St, Brooklyn, NY 11206\",\n        \"reviews\": [\n            \"65e77c27876d1fcf66f081e0\",\n            \"65e77c5d876d1fcf66f081e7\",\n            \"65e775fa876d1fcf66f08188\"\n        ]\n    },\n    {\n        \"_id\": \"65e7624feb9966e44cc5b0e0\",\n        \"name\": \"Mu Ramen\",\n        \"neighborhood\": \"Queens\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.743797,\n                \"lng\": -73.950652,\n                \"_id\": \"65e7624feb9966e44cc5b0e1\"\n            }\n        },\n        \"image\": \"https://resizer.otstatic.com/v2/photos/huge/25670650.jpg\",\n        \"cuisineType\": \"65e734d2cfab525b3b148637\",\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"5:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"5:00 pm - 10:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e7769c876d1fcf66f08198\",\n            \"65e77dd4876d1fcf66f08218\",\n            \"65e77df5876d1fcf66f0821f\"\n        ],\n        \"createdAt\": \"2024-03-05T18:19:59.971Z\",\n        \"updatedAt\": \"2024-03-05T20:17:57.385Z\",\n        \"__v\": 0,\n        \"address\": \"1209 Jackson Ave, Queens, NY 11101\"\n    },\n    {\n        \"_id\": \"65e761bfeb9966e44cc5b0c4\",\n        \"name\": \"Emily\",\n        \"neighborhood\": \"Brooklyn\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.683555,\n                \"lng\": -73.966393,\n                \"_id\": \"65e761bfeb9966e44cc5b0c5\"\n            }\n        },\n        \"image\": \"https://media-cdn.tripadvisor.com/media/photo-s/17/07/cd/40/the-colony-and-vodka.jpg\",\n        \"cuisineType\": \"65e73470cfab525b3b148636\",\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"5:00 pm - 11:30 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"12:00 pm - 3:00 pm, 5:00 pm - 11:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"createdAt\": \"2024-03-05T18:17:35.833Z\",\n        \"updatedAt\": \"2024-03-10T12:45:31.405Z\",\n        \"__v\": 0,\n        \"address\": \"919 Fulton St, Brooklyn, NY 11238\",\n        \"reviews\": [\n            \"65e779ec876d1fcf66f081b6\",\n            \"65e7743c876d1fcf66f0817c\",\n            \"65e77a40876d1fcf66f081bd\"\n        ]\n    },\n    {\n        \"_id\": \"65e7623deb9966e44cc5b0dc\",\n        \"name\": \"The Dutch\",\n        \"neighborhood\": \"Manhattan\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.726584,\n                \"lng\": -74.002082,\n                \"_id\": \"65e7623deb9966e44cc5b0dd\"\n            }\n        },\n        \"image\": \"https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=3085&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n        \"cuisineType\": \"638f1c8bb7f3872046553813\",\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"11:30 am - 3:00 pm, 5:30 pm - 11:30 pm\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"10:00 am - 3:00 pm, 5:30 pm - 11:30 pm\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"10:00 am - 3:00 pm, 5:30 pm - 11:00 pm\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e77678876d1fcf66f08194\",\n            \"65e77d72876d1fcf66f0820a\",\n            \"65e77d9d876d1fcf66f08211\"\n        ],\n        \"createdAt\": \"2024-03-05T18:19:41.132Z\",\n        \"updatedAt\": \"2024-03-05T20:16:29.684Z\",\n        \"__v\": 0,\n        \"address\": \"131 Sullivan St, New York, NY 10012\"\n    },\n    {\n        \"_id\": \"65e761d3eb9966e44cc5b0c8\",\n        \"name\": \"Kang Ho Dong Baekjeong\",\n        \"neighborhood\": \"Manhattan\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.747143,\n                \"lng\": -73.985414,\n                \"_id\": \"65e761d3eb9966e44cc5b0c9\"\n            }\n        },\n        \"image\": \"https://media-cdn.tripadvisor.com/media/photo-s/06/da/d6/de/kang-hodong-baekjeong.jpg\",\n        \"cuisineType\": \"65e734d2cfab525b3b148637\",\n        \"operatingHours\": {\n            \"Monday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            },\n            \"Tuesday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            },\n            \"Wednesday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            },\n            \"Thursday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            },\n            \"Friday\": {\n                \"hours\": \"11:30 am - 6:00 am\",\n                \"isOpen\": true\n            },\n            \"Saturday\": {\n                \"hours\": \"11:30 am - 6:00 am\",\n                \"isOpen\": true\n            },\n            \"Sunday\": {\n                \"hours\": \"11:30 am - 2:00 am\",\n                \"isOpen\": true\n            }\n        },\n        \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n        \"reviews\": [\n            \"65e774ed876d1fcf66f08180\",\n            \"65e77aa0876d1fcf66f081c4\",\n            \"65e77ac5876d1fcf66f081cb\"\n        ],\n        \"createdAt\": \"2024-03-05T18:17:55.714Z\",\n        \"updatedAt\": \"2024-03-05T20:04:21.661Z\",\n        \"__v\": 0,\n        \"address\": \"1 E 32nd St, New York, NY 10016\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getRestaurantById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/restaurants/getById/:restaurant_id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"restaurants",
+								"getById",
+								":restaurant_id"
+							],
+							"variable": [
+								{
+									"key": "restaurant_id",
+									"value": "65e76269eb9966e44cc5b0e4"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/restaurants/getById/:restaurant_id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"restaurants",
+										"getById",
+										":restaurant_id"
+									],
+									"variable": [
+										{
+											"key": "restaurant_id",
+											"value": "65e76269eb9966e44cc5b0e4"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2530"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9e2-7FJnolGEV/veJap9YEO5iNpvf7A\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 20:43:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"location\": {\n        \"type\": \"Point\",\n        \"coordinates\": {\n            \"lat\": 40.743394,\n            \"lng\": -73.954235,\n            \"_id\": \"65e76269eb9966e44cc5b0e5\"\n        }\n    },\n    \"operatingHours\": {\n        \"Monday\": {\n            \"hours\": \"5:00 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Tuesday\": {\n            \"hours\": \"5:00 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Wednesday\": {\n            \"hours\": \"5:00 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Thursday\": {\n            \"hours\": \"5:00 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Friday\": {\n            \"hours\": \"5:00 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Saturday\": {\n            \"hours\": \"11:00 am - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Sunday\": {\n            \"hours\": \"11:00 am - 12:00 am\",\n            \"isOpen\": true\n        }\n    },\n    \"_id\": \"65e76269eb9966e44cc5b0e4\",\n    \"name\": \"Casa Enrique\",\n    \"neighborhood\": \"Queens\",\n    \"image\": \"https://i.pinimg.com/474x/47/b1/d3/47b1d3175589f19f58a35cfcd78b3e73--city-restaurants-mexican-restaurants.jpg\",\n    \"cuisineType\": \"638f1d33b7f3872046553825\",\n    \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n    \"reviews\": [\n        {\n            \"_id\": \"65e776bc876d1fcf66f0819c\",\n            \"comment\": \"Head to this laid-back Long Island City restaurant for beef tongue tacos, chicken smothered in a heady mole sauce, and a monster crab tostada. New York's only Michelin-starred Mexican restaurant is an especially cool choice for lunch during the week or drinks after work. Eater critic Ryan Sutton awarded this restaurant two stars.\",\n            \"owner\": {\n                \"_id\": \"65e7512ff226b066d0c7f3d3\",\n                \"username\": \"Steve\"\n            },\n            \"rating\": 5,\n            \"createdAt\": \"2024-03-05T19:47:08.027Z\",\n            \"updatedAt\": \"2024-03-05T19:47:08.027Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"65e77984876d1fcf66f081af\",\n            \"comment\": \"For a Michelin star restaurant, it's fairly priced and the food is fairly good. Started with a strawberry margarita which was good in flavor but not much alcohol. Had the chicken enchiladas with salsa verde and it was really good. Great balance in flavor and a good portion. Extra tasty with their hot sauces. My wife had the lamb but it was a bit too salty for our taste. Although, it was cooked very well and fell off the bone. The highlight of the night was the tres leches cake. Probably the best I've ever had to be honest. Not too sweet and very milky. Overall, one of my top 3 favorite Mexican in NY.\",\n            \"owner\": {\n                \"_id\": \"65e778c6876d1fcf66f081a7\",\n                \"username\": \"Jason\"\n            },\n            \"rating\": 4,\n            \"createdAt\": \"2024-03-05T19:59:00.034Z\",\n            \"updatedAt\": \"2024-03-05T19:59:00.034Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"65e77e31876d1fcf66f08226\",\n            \"comment\": \"The hype was real. Please go. Get the ceviche. And the tres leches. You're welcome\",\n            \"owner\": {\n                \"_id\": \"65e77e1c876d1fcf66f08223\",\n                \"username\": \"Rob\"\n            },\n            \"rating\": 5,\n            \"createdAt\": \"2024-03-05T20:18:57.104Z\",\n            \"updatedAt\": \"2024-03-05T20:18:57.104Z\",\n            \"__v\": 0\n        }\n    ],\n    \"createdAt\": \"2024-03-05T18:20:25.748Z\",\n    \"updatedAt\": \"2024-03-05T20:18:57.140Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "getRestaurantAvgRatingById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/restaurants/getAvgRatingById/:restaurant_id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"restaurants",
+								"getAvgRatingById",
+								":restaurant_id"
+							],
+							"variable": [
+								{
+									"key": "restaurant_id",
+									"value": "65e7624feb9966e44cc5b0e0"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/restaurants/getAvgRatingById/:restaurant_id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"restaurants",
+										"getAvgRatingById",
+										":restaurant_id"
+									],
+									"variable": [
+										{
+											"key": "restaurant_id",
+											"value": "65e7624feb9966e44cc5b0e0"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e-NvD9G5YPSZqeFZumrJK720bS7jM\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 Mar 2024 19:06:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"rating\": 4,\n    \"totalRevirews\": 3\n}"
+						}
+					]
+				},
+				{
+					"name": "createRestaurant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"name\": \"Mission Chinese Food\",\n        \"neighborhood\": \"Manhattan\",\n        \"address\": \"171 E Broadway, New York, NY 10002\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.713829,\n                \"lng\": -73.989667\n            }\n        },\n        \"image\": \"https://video-images.vice.com/articles/590647db9ac0f921f03ed8d9/lede/1493583856927-mcf_halloween_017.jpeg?crop=1xw:0.8439609902475619xh;center,center&resize=1200:*\",\n        \"cuisineType\": \"65e734d2cfab525b3b148637\",\n        \"operatingHours\": {\n            \"Monday\": {\"hours\" : \"5:30 pm - 11:00 pm\", \"isOpen\": true},\n            \"Tuesday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Wednesday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Thursday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Friday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Saturday\": {\"hours\" : \"12:00 pm - 4:00 pm, 5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Sunday\": {\"hours\" : \"12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm\", \"isOpen\": true}\n        }\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/restaurants/create",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"restaurants",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Mission Chinese Food\",\n        \"neighborhood\": \"Manhattan\",\n        \"address\": \"171 E Broadway, New York, NY 10002\",\n        \"location\": {\n            \"type\": \"Point\",\n            \"coordinates\": {\n                \"lat\": 40.713829,\n                \"lng\": -73.989667\n            }\n        },\n        \"image\": \"https://video-images.vice.com/articles/590647db9ac0f921f03ed8d9/lede/1493583856927-mcf_halloween_017.jpeg?crop=1xw:0.8439609902475619xh;center,center&resize=1200:*\",\n        \"cuisineType\": \"65e734d2cfab525b3b148637\",\n        \"operatingHours\": {\n            \"Monday\": {\"hours\" : \"5:30 pm - 11:00 pm\", \"isOpen\": true},\n            \"Tuesday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Wednesday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Thursday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Friday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Saturday\": {\"hours\" : \"12:00 pm - 4:00 pm, 5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Sunday\": {\"hours\" : \"12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm\", \"isOpen\": true}\n        }\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/restaurants/create",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"restaurants",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "7"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7-rM9AyJuqT6iOan/xHh+AW+7K/T8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 17:48:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Created"
+						}
+					]
+				},
+				{
+					"name": "editRestaurant",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"name\": \"Jadde Edit\",\n        \"neighborhood\": \"Madrid\",\n        \"address\": \"Madrid, Madri, Espanha\",\n        \"location\": {\n            \"coordinates\": {\n                \"lat\": 40.4167754,\n                \"lng\": -3.7037902\n            }\n        },\n        \"image\": \"https://video-images.vice.com/articles/590647db9ac0f921f03ed8d9/lede/1493583856927-mcf_halloween_017.jpeg?crop=1xw:0.8439609902475619xh;center,center&resize=1200:*\",\n        \"cuisineType\": \"65e734d2cfab525b3b148637\",\n        \"operatingHours\": {\n            \"Monday\": {\"hours\" : \"\", \"isOpen\": false},\n            \"Tuesday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Wednesday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Thursday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Friday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Saturday\": {\"hours\" : \"\", \"isOpen\": false},\n            \"Sunday\": {\"hours\" : \"\", \"isOpen\": false}\n        }\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/restaurants/edit/:restaurant_id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"restaurants",
+								"edit",
+								":restaurant_id"
+							],
+							"variable": [
+								{
+									"key": "restaurant_id",
+									"value": "65ef5963cef2e87996ce624c"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"name\": \"Jadde Edit\",\n        \"neighborhood\": \"Madrid\",\n        \"address\": \"Madrid, Madri, Espanha\",\n        \"location\": {\n            \"coordinates\": {\n                \"lat\": 40.4167754,\n                \"lng\": -3.7037902\n            }\n        },\n        \"image\": \"https://video-images.vice.com/articles/590647db9ac0f921f03ed8d9/lede/1493583856927-mcf_halloween_017.jpeg?crop=1xw:0.8439609902475619xh;center,center&resize=1200:*\",\n        \"cuisineType\": \"65e734d2cfab525b3b148637\",\n        \"operatingHours\": {\n            \"Monday\": {\"hours\" : \"\", \"isOpen\": false},\n            \"Tuesday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Wednesday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Thursday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Friday\": {\"hours\" : \"5:30 pm - 12:00 am\", \"isOpen\": true},\n            \"Saturday\": {\"hours\" : \"\", \"isOpen\": false},\n            \"Sunday\": {\"hours\" : \"\", \"isOpen\": false}\n        }\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/restaurants/edit/:restaurant_id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"restaurants",
+										"edit",
+										":restaurant_id"
+									],
+									"variable": [
+										{
+											"key": "restaurant_id",
+											"value": "65ef5963cef2e87996ce624c"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "927"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39f-GGNsnS7XVM7gWQVR6m7GNvCjLcQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 Mar 2024 19:23:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"location\": {\n        \"type\": \"Point\",\n        \"coordinates\": {\n            \"lat\": 40.4167754,\n            \"lng\": -3.7037902,\n            \"_id\": \"65ef5a189c135a73fc327f01\"\n        }\n    },\n    \"operatingHours\": {\n        \"Monday\": {\n            \"hours\": \"\",\n            \"isOpen\": false\n        },\n        \"Tuesday\": {\n            \"hours\": \"5:30 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Wednesday\": {\n            \"hours\": \"5:30 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Thursday\": {\n            \"hours\": \"5:30 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Friday\": {\n            \"hours\": \"5:30 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Saturday\": {\n            \"hours\": \"\",\n            \"isOpen\": false\n        },\n        \"Sunday\": {\n            \"hours\": \"\",\n            \"isOpen\": false\n        }\n    },\n    \"_id\": \"65ef5963cef2e87996ce624c\",\n    \"name\": \"Jadde Edit\",\n    \"neighborhood\": \"Madrid\",\n    \"address\": \"Madrid, Madri, Espanha\",\n    \"image\": \"https://video-images.vice.com/articles/590647db9ac0f921f03ed8d9/lede/1493583856927-mcf_halloween_017.jpeg?crop=1xw:0.8439609902475619xh;center,center&resize=1200:*\",\n    \"cuisineType\": \"65e734d2cfab525b3b148637\",\n    \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n    \"reviews\": [],\n    \"createdAt\": \"2024-03-11T19:20:03.747Z\",\n    \"updatedAt\": \"2024-03-11T19:23:04.566Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteRestaurant",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/restaurants/delete/:restaurant_id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"restaurants",
+								"delete",
+								":restaurant_id"
+							],
+							"variable": [
+								{
+									"key": "restaurant_id",
+									"value": "65ef566f3aabd0c9926f5503"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/restaurants/delete/:restaurant_id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"restaurants",
+										"delete",
+										":restaurant_id"
+									],
+									"variable": [
+										{
+											"key": "restaurant_id",
+											"value": "65ef566f3aabd0c9926f5503"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "797"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"31d-9hwjrhO1WN/zX/YYLQ1OpAG0ckg\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 Mar 2024 19:07:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"location\": {\n        \"coordinates\": {\n            \"lat\": 40.4167754,\n            \"lng\": -3.7037902,\n            \"_id\": \"65ef566f3aabd0c9926f5504\"\n        },\n        \"type\": \"Point\"\n    },\n    \"operatingHours\": {\n        \"Monday\": {\n            \"hours\": \"\",\n            \"isOpen\": false\n        },\n        \"Tuesday\": {\n            \"hours\": \"\",\n            \"isOpen\": false\n        },\n        \"Wednesday\": {\n            \"hours\": \"\",\n            \"isOpen\": false\n        },\n        \"Thursday\": {\n            \"hours\": \"\",\n            \"isOpen\": false\n        },\n        \"Friday\": {\n            \"hours\": \"\",\n            \"isOpen\": false\n        },\n        \"Saturday\": {\n            \"hours\": \"\",\n            \"isOpen\": false\n        },\n        \"Sunday\": {\n            \"hours\": \"\",\n            \"isOpen\": false\n        }\n    },\n    \"_id\": \"65ef566f3aabd0c9926f5503\",\n    \"name\": \"Jadde\",\n    \"neighborhood\": \"Madrid\",\n    \"address\": \"Madrid, Madri, Espanha\",\n    \"image\": \"https://res.cloudinary.com/dagndlfhj/image/upload/v1684567317/shawnanggg-nmpW_WwwVSc-unsplash_1_pqwgtk.jpg\",\n    \"cuisineType\": \"65e734d2cfab525b3b148637\",\n    \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n    \"reviews\": [],\n    \"createdAt\": \"2024-03-11T19:07:27.249Z\",\n    \"updatedAt\": \"2024-03-11T19:07:27.249Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Review",
+			"item": [
+				{
+					"name": "createReview",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rating",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "comment",
+									"value": "The hype was real. Please go. Get the ceviche. And the tres leches. You're welcome",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/reviews/:restaurant_id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"reviews",
+								":restaurant_id"
+							],
+							"variable": [
+								{
+									"key": "restaurant_id",
+									"value": "65e76269eb9966e44cc5b0e4"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "rating",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "comment",
+											"value": "The hype was real. Please go. Get the ceviche. And the tres leches. You're welcome",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/reviews/:restaurant_id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"reviews",
+										":restaurant_id"
+									],
+									"variable": [
+										{
+											"key": "restaurant_id",
+											"value": "65e76269eb9966e44cc5b0e4"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "7"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7-rM9AyJuqT6iOan/xHh+AW+7K/T8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 20:18:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Created"
+						}
+					]
+				},
+				{
+					"name": "deleteReview",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/reviews/:review_id/:restaurant_id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"reviews",
+								":review_id",
+								":restaurant_id"
+							],
+							"variable": [
+								{
+									"key": "review_id",
+									"value": "65ef574e3aabd0c9926f5512"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "65e76269eb9966e44cc5b0e4"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/reviews/:review_id/:restaurant_id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"reviews",
+										":review_id",
+										":restaurant_id"
+									],
+									"variable": [
+										{
+											"key": "review_id",
+											"value": "65ef574e3aabd0c9926f5512"
+										},
+										{
+											"key": "restaurant_id",
+											"value": "65e76269eb9966e44cc5b0e4"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3505"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"db1-uaQxjfMRMjmKPWIqa3O7OQ88ZSQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 Mar 2024 19:11:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"location\": {\n        \"type\": \"Point\",\n        \"coordinates\": {\n            \"lat\": 40.743394,\n            \"lng\": -73.954235,\n            \"_id\": \"65e76269eb9966e44cc5b0e5\"\n        }\n    },\n    \"operatingHours\": {\n        \"Monday\": {\n            \"hours\": \"5:00 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Tuesday\": {\n            \"hours\": \"5:00 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Wednesday\": {\n            \"hours\": \"5:00 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Thursday\": {\n            \"hours\": \"5:00 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Friday\": {\n            \"hours\": \"5:00 pm - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Saturday\": {\n            \"hours\": \"11:00 am - 12:00 am\",\n            \"isOpen\": true\n        },\n        \"Sunday\": {\n            \"hours\": \"11:00 am - 12:00 am\",\n            \"isOpen\": true\n        }\n    },\n    \"_id\": \"65e76269eb9966e44cc5b0e4\",\n    \"name\": \"Casa Enrique\",\n    \"neighborhood\": \"Queens\",\n    \"image\": \"https://i.pinimg.com/474x/47/b1/d3/47b1d3175589f19f58a35cfcd78b3e73--city-restaurants-mexican-restaurants.jpg\",\n    \"cuisineType\": {\n        \"_id\": \"638f1d33b7f3872046553825\",\n        \"cuisine\": \"Mexican\"\n    },\n    \"owner\": \"65aa9eac5e7211c08fed7ef8\",\n    \"reviews\": [\n        {\n            \"_id\": \"65ecec982708d75463c06911\",\n            \"comment\": \"Puuurrrrrr 🐈\",\n            \"owner\": {\n                \"_id\": \"65aa9eac5e7211c08fed7ef8\",\n                \"username\": \"yayi\",\n                \"avatar\": \"https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80\"\n            },\n            \"rating\": 4,\n            \"createdAt\": \"2024-03-09T23:11:20.361Z\",\n            \"updatedAt\": \"2024-03-09T23:11:20.361Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"65e77e31876d1fcf66f08226\",\n            \"comment\": \"The hype was real. Please go. Get the ceviche. And the tres leches. You're welcome\",\n            \"owner\": {\n                \"_id\": \"65e77e1c876d1fcf66f08223\",\n                \"username\": \"Rob\",\n                \"avatar\": \"https://res.cloudinary.com/dagndlfhj/image/upload/v1684765456/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector_q1ax7i.jpg\"\n            },\n            \"rating\": 5,\n            \"createdAt\": \"2024-03-05T20:18:57.104Z\",\n            \"updatedAt\": \"2024-03-05T20:18:57.104Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"65e77984876d1fcf66f081af\",\n            \"comment\": \"For a Michelin star restaurant, it's fairly priced and the food is fairly good. Started with a strawberry margarita which was good in flavor but not much alcohol. Had the chicken enchiladas with salsa verde and it was really good. Great balance in flavor and a good portion. Extra tasty with their hot sauces. My wife had the lamb but it was a bit too salty for our taste. Although, it was cooked very well and fell off the bone. The highlight of the night was the tres leches cake. Probably the best I've ever had to be honest. Not too sweet and very milky. Overall, one of my top 3 favorite Mexican in NY.\",\n            \"owner\": {\n                \"_id\": \"65e778c6876d1fcf66f081a7\",\n                \"username\": \"Jason\",\n                \"avatar\": \"https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n            },\n            \"rating\": 4,\n            \"createdAt\": \"2024-03-05T19:59:00.034Z\",\n            \"updatedAt\": \"2024-03-05T19:59:00.034Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"65e776bc876d1fcf66f0819c\",\n            \"comment\": \"Head to this laid-back Long Island City restaurant for beef tongue tacos, chicken smothered in a heady mole sauce, and a monster crab tostada. New York's only Michelin-starred Mexican restaurant is an especially cool choice for lunch during the week or drinks after work. Eater critic Ryan Sutton awarded this restaurant two stars.\",\n            \"owner\": {\n                \"_id\": \"65e7512ff226b066d0c7f3d3\",\n                \"username\": \"Steve\",\n                \"avatar\": \"https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"\n            },\n            \"rating\": 5,\n            \"createdAt\": \"2024-03-05T19:47:08.027Z\",\n            \"updatedAt\": \"2024-03-05T19:47:08.027Z\",\n            \"__v\": 0\n        }\n    ],\n    \"createdAt\": \"2024-03-05T18:20:25.748Z\",\n    \"updatedAt\": \"2024-03-11T19:11:52.357Z\",\n    \"__v\": 0,\n    \"address\": \"5-48 49th Ave, Queens, NY 11101\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cuisine",
+			"item": [
+				{
+					"name": "getAllCuisines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/cuisines",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"cuisines"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sample",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/cuisines",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"cuisines"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1560"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"618-D7v+a1fA7wpCP/0HUU7LVUkkKB0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 05 Mar 2024 17:01:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"638f1c18b7f3872046553812\",\n        \"cuisine\": \"African\"\n    },\n    {\n        \"_id\": \"638f1c8bb7f3872046553813\",\n        \"cuisine\": \"American\"\n    },\n    {\n        \"_id\": \"65e734d2cfab525b3b148637\",\n        \"cuisine\": \"Asian\"\n    },\n    {\n        \"_id\": \"638f1ca3b7f3872046553814\",\n        \"cuisine\": \"British\"\n    },\n    {\n        \"_id\": \"638f1caeb7f3872046553815\",\n        \"cuisine\": \"Cajun\"\n    },\n    {\n        \"_id\": \"638f1cb9b7f3872046553816\",\n        \"cuisine\": \"Caribbean\"\n    },\n    {\n        \"_id\": \"638f1cc3b7f3872046553817\",\n        \"cuisine\": \"Chinese\"\n    },\n    {\n        \"_id\": \"638f1cceb7f3872046553818\",\n        \"cuisine\": \"Eastern European\"\n    },\n    {\n        \"_id\": \"638f1cd6b7f3872046553819\",\n        \"cuisine\": \"European\"\n    },\n    {\n        \"_id\": \"638f1cddb7f387204655381a\",\n        \"cuisine\": \"French\"\n    },\n    {\n        \"_id\": \"638f1ce4b7f387204655381b\",\n        \"cuisine\": \"German\"\n    },\n    {\n        \"_id\": \"638f1cedb7f387204655381c\",\n        \"cuisine\": \"Greek\"\n    },\n    {\n        \"_id\": \"638f1cf4b7f387204655381d\",\n        \"cuisine\": \"Indian\"\n    },\n    {\n        \"_id\": \"638f1cfcb7f387204655381e\",\n        \"cuisine\": \"Irish\"\n    },\n    {\n        \"_id\": \"638f1d04b7f387204655381f\",\n        \"cuisine\": \"Italian\"\n    },\n    {\n        \"_id\": \"638f1d0bb7f3872046553820\",\n        \"cuisine\": \"Japanese\"\n    },\n    {\n        \"_id\": \"638f1d16b7f3872046553821\",\n        \"cuisine\": \"Jewish\"\n    },\n    {\n        \"_id\": \"638f1d1db7f3872046553822\",\n        \"cuisine\": \"Korean\"\n    },\n    {\n        \"_id\": \"638f1d25b7f3872046553823\",\n        \"cuisine\": \"Latin American\"\n    },\n    {\n        \"_id\": \"638f1d2bb7f3872046553824\",\n        \"cuisine\": \"Mediterranean\"\n    },\n    {\n        \"_id\": \"638f1d33b7f3872046553825\",\n        \"cuisine\": \"Mexican\"\n    },\n    {\n        \"_id\": \"638f1d3cb7f3872046553826\",\n        \"cuisine\": \"Middle Eastern\"\n    },\n    {\n        \"_id\": \"638f1d44b7f3872046553827\",\n        \"cuisine\": \"Nordic\"\n    },\n    {\n        \"_id\": \"65e73470cfab525b3b148636\",\n        \"cuisine\": \"Pizza\"\n    },\n    {\n        \"_id\": \"638f1d4cb7f3872046553828\",\n        \"cuisine\": \"Southern\"\n    },\n    {\n        \"_id\": \"638f1d52b7f3872046553829\",\n        \"cuisine\": \"Spanish\"\n    },\n    {\n        \"_id\": \"638f1d5ab7f387204655382a\",\n        \"cuisine\": \"Thai\"\n    },\n    {\n        \"_id\": \"638f1d62b7f387204655382b\",\n        \"cuisine\": \"Vietnamese\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{YAYI_AUTH_TOKEN}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "localhost:3001/api"
+		},
+		{
+			"key": "YAYI_AUTH_TOKEN",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWFhOWVhYzVlNzIxMWMwOGZlZDdlZjgiLCJlbWFpbCI6InlheWlAZ21haWwuY29tIiwidXNlcm5hbWUiOiJ5YXlpIiwiYXZhdGFyIjoiaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1MTQ4ODgyODY5NzQtNmMwM2UyY2ExZGJhP2l4bGliPXJiLTQuMC4zJml4aWQ9TW53eE1qQTNmREI4TUh4d2FHOTBieTF3WVdkbGZIeDhmR1Z1ZkRCOGZIeDgmYXV0bz1mb3JtYXQmZml0PWNyb3Amdz0xMTQzJnE9ODAiLCJmYXZvcml0ZVJlc3RhdXJhbnRzIjpbIjY1ZWNhZGU1Zjk5YmU1YTA5ZWUyNTU5ZSIsIjY1ZTc2MjY5ZWI5OTY2ZTQ0Y2M1YjBlNCIsIjY1ZTc2MjRmZWI5OTY2ZTQ0Y2M1YjBlMCIsIjY1ZTc2MjJkZWI5OTY2ZTQ0Y2M1YjBkOCIsIjY1ZTc2MjNkZWI5OTY2ZTQ0Y2M1YjBkYyIsIjY1ZTc2MTdhZWI5OTY2ZTQ0Y2M1YjBjMCIsIjY1ZTc2MWU1ZWI5OTY2ZTQ0Y2M1YjBjYyJdLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MTAxMDAzMTgsImV4cCI6MTcxMDI3MzExOH0.OvwbVCRcOkV4HBHdsDkG8OwMNZW925xMWDmtBfKKaSo",
+			"type": "string"
+		}
+	]
+}
