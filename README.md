@@ -8,6 +8,7 @@
 - 🚀 [Deployed Application](#deployed-application)
 - 📖 [Installation](#installation)
 - 📚 [Environment Variables](#environment-variables)
+- 📍 [Postman Collection](#postman-collection)
 - 💻 [Application Routes](#application-routes)
 - ✨ [Contributors](#contributors)
 
@@ -26,6 +27,10 @@ $ npm install
 ## Environment Variables
 
 You will need to create a .env (or .env.local) file if you want to run this project locally. The structure of such file can be found at .env.template file.
+
+## Postman Collection
+
+In the root directory of the project, you will find a JSON file called "wecookin.postman_collection.json". Throughout the development of this project, Postman is used to test our API. This file can be imported directly as a collection in Postman to view all the testing work. The requests are organized by folders according to their corresponding routes. Each request includes different samples of responses.
 
 ## Application Routes:
 
