@@ -69,7 +69,7 @@ In the root directory of the project, you will find a JSON file called "wecookin
 
 |    URL path    | HTTP Method |      Action      | Protected |
 | :------------: | :---------: | :--------------: | :-------: |
-| /api/cuisines/ |     GET     | Get All Cuisines |    ❌     |
+| /api/cuisines  |     GET     | Get All Cuisines |    ❌     |
 
 ## **Reviews Routes**:
 
