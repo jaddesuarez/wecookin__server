@@ -14,7 +14,7 @@
 
 ## Deployed Application
 
-The deployed application can be found at the following link: [wecookinapi](https://cook.fly.dev/).
+The deployed API can be found at the following link: [wecookinapi](https://cook.fly.dev/).
 
 ## Installation
 
