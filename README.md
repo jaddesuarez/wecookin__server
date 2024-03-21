@@ -9,7 +9,7 @@
 - 📖 [Installation](#installation)
 - 📚 [Environment Variables](#environment-variables)
 - 📍 [Postman Collection](#postman-collection)
-- 📦 [Database Collection](#db-info)
+- 📦 [Database Collection](#database-collection)
 - 💻 [Application Routes](#application-routes)
 - ✨ [Contributors](#contributors)
 
