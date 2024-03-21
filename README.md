@@ -36,6 +36,9 @@ In the root directory of the project, you will find a JSON file called "wecookin
 ## Database Collection
 
 In the project's root directory, there's a folder named "DBInfo" containing JSON files. Use these files to populate your database with the essential information required for this project.
+All user passwords are hashed to match '1234' for login purposes.
+Currently, 'yayi' is the only user who can perform complete CRUD (Create, Read, Update, Delete) operations on restaurants due to their ADMIN permissions.
+This can be modified for any user in the database by changing their 'role' field from 'USER' to 'ADMIN', or vice versa.
 
 ## Application Routes:
 
