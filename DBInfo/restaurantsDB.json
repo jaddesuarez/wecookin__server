@@ -1,0 +1,767 @@
+[{
+  "_id": {
+    "$oid": "65e7617aeb9966e44cc5b0c0"
+  },
+  "name": "Mission Chinese Food",
+  "neighborhood": "Manhattan",
+  "location": {
+    "type": "Point",
+    "coordinates": {
+      "lat": 40.713829,
+      "lng": -73.989667,
+      "_id": {
+        "$oid": "65e7617aeb9966e44cc5b0c1"
+      }
+    }
+  },
+  "image": "https://video-images.vice.com/articles/590647db9ac0f921f03ed8d9/lede/1493583856927-mcf_halloween_017.jpeg?crop=1xw:0.8439609902475619xh;center,center&resize=1200:*",
+  "cuisineType": {
+    "$oid": "65e734d2cfab525b3b148637"
+  },
+  "operatingHours": {
+    "Monday": {
+      "hours": "5:30 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Tuesday": {
+      "hours": "5:30 pm - 12:00 am",
+      "isOpen": true
+    },
+    "Wednesday": {
+      "hours": "5:30 pm - 12:00 am",
+      "isOpen": true
+    },
+    "Thursday": {
+      "hours": "5:30 pm - 12:00 am",
+      "isOpen": true
+    },
+    "Friday": {
+      "hours": "5:30 pm - 12:00 am",
+      "isOpen": true
+    },
+    "Saturday": {
+      "hours": "12:00 pm - 4:00 pm, 5:30 pm - 12:00 am",
+      "isOpen": true
+    },
+    "Sunday": {
+      "hours": "12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm",
+      "isOpen": true
+    }
+  },
+  "owner": {
+    "$oid": "65aa9eac5e7211c08fed7ef8"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709662586636"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1710144959084"
+    }
+  },
+  "__v": 0,
+  "address": "171 E Broadway, New York, NY 10002",
+  "reviews": [
+    {
+      "$oid": "65e77395876d1fcf66f08178"
+    },
+    {
+      "$oid": "65e778a8876d1fcf66f081a3"
+    },
+    {
+      "$oid": "65e77958876d1fcf66f081ab"
+    },
+    {
+      "$oid": "65ecec802708d75463c068f6"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "65e761bfeb9966e44cc5b0c4"
+  },
+  "name": "Emily",
+  "neighborhood": "Brooklyn",
+  "location": {
+    "type": "Point",
+    "coordinates": {
+      "lat": 40.683555,
+      "lng": -73.966393,
+      "_id": {
+        "$oid": "65e761bfeb9966e44cc5b0c5"
+      }
+    }
+  },
+  "image": "https://media-cdn.tripadvisor.com/media/photo-s/17/07/cd/40/the-colony-and-vodka.jpg",
+  "cuisineType": {
+    "$oid": "65e73470cfab525b3b148636"
+  },
+  "operatingHours": {
+    "Monday": {
+      "hours": "5:30 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Tuesday": {
+      "hours": "5:30 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Wednesday": {
+      "hours": "5:30 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Thursday": {
+      "hours": "5:30 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Friday": {
+      "hours": "5:30 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Saturday": {
+      "hours": "5:00 pm - 11:30 pm",
+      "isOpen": true
+    },
+    "Sunday": {
+      "hours": "12:00 pm - 3:00 pm, 5:00 pm - 11:00 pm",
+      "isOpen": true
+    }
+  },
+  "owner": {
+    "$oid": "65aa9eac5e7211c08fed7ef8"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709662655833"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1710074731405"
+    }
+  },
+  "__v": 0,
+  "address": "919 Fulton St, Brooklyn, NY 11238",
+  "reviews": [
+    {
+      "$oid": "65e779ec876d1fcf66f081b6"
+    },
+    {
+      "$oid": "65e7743c876d1fcf66f0817c"
+    },
+    {
+      "$oid": "65e77a40876d1fcf66f081bd"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "65e761d3eb9966e44cc5b0c8"
+  },
+  "name": "Kang Ho Dong Baekjeong",
+  "neighborhood": "Manhattan",
+  "location": {
+    "type": "Point",
+    "coordinates": {
+      "lat": 40.747143,
+      "lng": -73.985414,
+      "_id": {
+        "$oid": "65e761d3eb9966e44cc5b0c9"
+      }
+    }
+  },
+  "image": "https://media-cdn.tripadvisor.com/media/photo-s/06/da/d6/de/kang-hodong-baekjeong.jpg",
+  "cuisineType": {
+    "$oid": "65e734d2cfab525b3b148637"
+  },
+  "operatingHours": {
+    "Monday": {
+      "hours": "11:30 am - 2:00 am",
+      "isOpen": true
+    },
+    "Tuesday": {
+      "hours": "11:30 am - 2:00 am",
+      "isOpen": true
+    },
+    "Wednesday": {
+      "hours": "11:30 am - 2:00 am",
+      "isOpen": true
+    },
+    "Thursday": {
+      "hours": "11:30 am - 2:00 am",
+      "isOpen": true
+    },
+    "Friday": {
+      "hours": "11:30 am - 6:00 am",
+      "isOpen": true
+    },
+    "Saturday": {
+      "hours": "11:30 am - 6:00 am",
+      "isOpen": true
+    },
+    "Sunday": {
+      "hours": "11:30 am - 2:00 am",
+      "isOpen": true
+    }
+  },
+  "owner": {
+    "$oid": "65aa9eac5e7211c08fed7ef8"
+  },
+  "reviews": [
+    {
+      "$oid": "65e774ed876d1fcf66f08180"
+    },
+    {
+      "$oid": "65e77aa0876d1fcf66f081c4"
+    },
+    {
+      "$oid": "65e77ac5876d1fcf66f081cb"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709662675714"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669061661"
+    }
+  },
+  "__v": 0,
+  "address": "1 E 32nd St, New York, NY 10016"
+},{
+  "_id": {
+    "$oid": "65e761e5eb9966e44cc5b0cc"
+  },
+  "name": "Katz's Delicatessen",
+  "neighborhood": "Manhattan",
+  "location": {
+    "type": "Point",
+    "coordinates": {
+      "lat": 40.722216,
+      "lng": -73.987501,
+      "_id": {
+        "$oid": "65e761e5eb9966e44cc5b0cd"
+      }
+    }
+  },
+  "image": "https://www.livingfla.com/wp-content/uploads/2019/04/katz-1-500.jpg",
+  "cuisineType": {
+    "$oid": "638f1c8bb7f3872046553813"
+  },
+  "operatingHours": {
+    "Monday": {
+      "hours": "8:00 am - 10:30 pm",
+      "isOpen": true
+    },
+    "Tuesday": {
+      "hours": "8:00 am - 10:30 pm",
+      "isOpen": true
+    },
+    "Wednesday": {
+      "hours": "8:00 am - 10:30 pm",
+      "isOpen": true
+    },
+    "Thursday": {
+      "hours": "8:00 am - 2:30 am",
+      "isOpen": true
+    },
+    "Friday": {
+      "hours": "8:00 am - Sat",
+      "isOpen": true
+    },
+    "Saturday": {
+      "hours": "Open 24 hours",
+      "isOpen": true
+    },
+    "Sunday": {
+      "hours": "Sat - 10:30 pm",
+      "isOpen": true
+    }
+  },
+  "owner": {
+    "$oid": "65aa9eac5e7211c08fed7ef8"
+  },
+  "reviews": [
+    {
+      "$oid": "65e7751f876d1fcf66f08184"
+    },
+    {
+      "$oid": "65e77bb0876d1fcf66f081d2"
+    },
+    {
+      "$oid": "65e77bdc876d1fcf66f081d9"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709662693480"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669340435"
+    }
+  },
+  "__v": 0,
+  "address": "205 E Houston St, New York, NY 10002"
+},{
+  "_id": {
+    "$oid": "65e761fceb9966e44cc5b0d0"
+  },
+  "name": "Roberta's Pizza",
+  "neighborhood": "Brooklyn",
+  "location": {
+    "type": "Point",
+    "coordinates": {
+      "lat": 40.705089,
+      "lng": -73.933585,
+      "_id": {
+        "$oid": "65e761fceb9966e44cc5b0d1"
+      }
+    }
+  },
+  "image": "https://c8.alamy.com/compes/dp9a5f/robertas-pizza-restaurant-en-east-williamsburg-de-brooklyn-dp9a5f.jpg",
+  "cuisineType": {
+    "$oid": "65e73470cfab525b3b148636"
+  },
+  "operatingHours": {
+    "Monday": {
+      "hours": "11:00 am - 12:00 am",
+      "isOpen": true
+    },
+    "Tuesday": {
+      "hours": "11:00 am - 12:00 am",
+      "isOpen": true
+    },
+    "Wednesday": {
+      "hours": "11:00 am - 12:00 am",
+      "isOpen": true
+    },
+    "Thursday": {
+      "hours": "11:00 am - 12:00 am",
+      "isOpen": true
+    },
+    "Friday": {
+      "hours": "11:00 am - 12:00 am",
+      "isOpen": true
+    },
+    "Saturday": {
+      "hours": "10:00 am - 12:00 am",
+      "isOpen": true
+    },
+    "Sunday": {
+      "hours": "10:00 am - 12:00 am",
+      "isOpen": true
+    }
+  },
+  "owner": {
+    "$oid": "65aa9eac5e7211c08fed7ef8"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709662716548"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669469846"
+    }
+  },
+  "__v": 0,
+  "address": "261 Moore St, Brooklyn, NY 11206",
+  "reviews": [
+    {
+      "$oid": "65e77c27876d1fcf66f081e0"
+    },
+    {
+      "$oid": "65e77c5d876d1fcf66f081e7"
+    },
+    {
+      "$oid": "65e775fa876d1fcf66f08188"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "65e76218eb9966e44cc5b0d4"
+  },
+  "name": "Hometown BBQ",
+  "neighborhood": "Brooklyn",
+  "location": {
+    "type": "Point",
+    "coordinates": {
+      "lat": 40.674925,
+      "lng": -74.016162,
+      "_id": {
+        "$oid": "65e76218eb9966e44cc5b0d5"
+      }
+    }
+  },
+  "image": "https://images.unsplash.com/photo-1534993160870-eaba9d2bb3b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "cuisineType": {
+    "$oid": "638f1c8bb7f3872046553813"
+  },
+  "operatingHours": {
+    "Monday": {
+      "hours": "",
+      "isOpen": false
+    },
+    "Tuesday": {
+      "hours": "12:00 pm - 10:00 pm",
+      "isOpen": true
+    },
+    "Wednesday": {
+      "hours": "12:00 pm - 10:00 pm",
+      "isOpen": true
+    },
+    "Thursday": {
+      "hours": "12:00 pm - 10:00 pm",
+      "isOpen": true
+    },
+    "Friday": {
+      "hours": "12:00 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Saturday": {
+      "hours": "12:00 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Sunday": {
+      "hours": "12:00 pm - 9:00 pm",
+      "isOpen": true
+    }
+  },
+  "owner": {
+    "$oid": "65aa9eac5e7211c08fed7ef8"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709662744076"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669566992"
+    }
+  },
+  "__v": 0,
+  "address": "454 Van Brunt St, Brooklyn, NY 11231",
+  "reviews": [
+    {
+      "$oid": "65e77620876d1fcf66f0818c"
+    },
+    {
+      "$oid": "65e77c9f876d1fcf66f081ee"
+    },
+    {
+      "$oid": "65e9c3a4eb8bfe6b981ed7e4"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "65e7622deb9966e44cc5b0d8"
+  },
+  "name": "Superiority Burger",
+  "neighborhood": "Manhattan",
+  "location": {
+    "type": "Point",
+    "coordinates": {
+      "lat": 40.727397,
+      "lng": -73.983645,
+      "_id": {
+        "$oid": "65e7622deb9966e44cc5b0d9"
+      }
+    }
+  },
+  "image": "http://www.wazwu.com/blog/wp-content/uploads/2015/10/img_6912.jpg",
+  "cuisineType": {
+    "$oid": "638f1c8bb7f3872046553813"
+  },
+  "operatingHours": {
+    "Monday": {
+      "hours": "11:30 am - 10:00 pm",
+      "isOpen": true
+    },
+    "Tuesday": {
+      "hours": "",
+      "isOpen": false
+    },
+    "Wednesday": {
+      "hours": "11:30 am - 10:00 pm",
+      "isOpen": true
+    },
+    "Thursday": {
+      "hours": "11:30 am - 10:00 pm",
+      "isOpen": true
+    },
+    "Friday": {
+      "hours": "11:30 am - 10:00 pm",
+      "isOpen": true
+    },
+    "Saturday": {
+      "hours": "11:30 am - 10:00 pm",
+      "isOpen": true
+    },
+    "Sunday": {
+      "hours": "11:30 am - 10:00 pm",
+      "isOpen": true
+    }
+  },
+  "owner": {
+    "$oid": "65aa9eac5e7211c08fed7ef8"
+  },
+  "reviews": [
+    {
+      "$oid": "65e77656876d1fcf66f08190"
+    },
+    {
+      "$oid": "65e77d03876d1fcf66f081fc"
+    },
+    {
+      "$oid": "65e77d28876d1fcf66f08203"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709662765055"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669672811"
+    }
+  },
+  "__v": 0,
+  "address": "430 E 9th St, New York, NY 10009"
+},{
+  "_id": {
+    "$oid": "65e7623deb9966e44cc5b0dc"
+  },
+  "name": "The Dutch",
+  "neighborhood": "Manhattan",
+  "location": {
+    "type": "Point",
+    "coordinates": {
+      "lat": 40.726584,
+      "lng": -74.002082,
+      "_id": {
+        "$oid": "65e7623deb9966e44cc5b0dd"
+      }
+    }
+  },
+  "image": "https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=3085&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "cuisineType": {
+    "$oid": "638f1c8bb7f3872046553813"
+  },
+  "operatingHours": {
+    "Monday": {
+      "hours": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Tuesday": {
+      "hours": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Wednesday": {
+      "hours": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Thursday": {
+      "hours": "11:30 am - 3:00 pm, 5:30 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Friday": {
+      "hours": "11:30 am - 3:00 pm, 5:30 pm - 11:30 pm",
+      "isOpen": true
+    },
+    "Saturday": {
+      "hours": "10:00 am - 3:00 pm, 5:30 pm - 11:30 pm",
+      "isOpen": true
+    },
+    "Sunday": {
+      "hours": "10:00 am - 3:00 pm, 5:30 pm - 11:00 pm",
+      "isOpen": true
+    }
+  },
+  "owner": {
+    "$oid": "65aa9eac5e7211c08fed7ef8"
+  },
+  "reviews": [
+    {
+      "$oid": "65e77678876d1fcf66f08194"
+    },
+    {
+      "$oid": "65e77d72876d1fcf66f0820a"
+    },
+    {
+      "$oid": "65e77d9d876d1fcf66f08211"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709662781132"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669789684"
+    }
+  },
+  "__v": 0,
+  "address": "131 Sullivan St, New York, NY 10012"
+},{
+  "_id": {
+    "$oid": "65e7624feb9966e44cc5b0e0"
+  },
+  "name": "Mu Ramen",
+  "neighborhood": "Queens",
+  "location": {
+    "type": "Point",
+    "coordinates": {
+      "lat": 40.743797,
+      "lng": -73.950652,
+      "_id": {
+        "$oid": "65e7624feb9966e44cc5b0e1"
+      }
+    }
+  },
+  "image": "https://resizer.otstatic.com/v2/photos/huge/25670650.jpg",
+  "cuisineType": {
+    "$oid": "65e734d2cfab525b3b148637"
+  },
+  "operatingHours": {
+    "Monday": {
+      "hours": "5:00 pm - 10:00 pm",
+      "isOpen": true
+    },
+    "Tuesday": {
+      "hours": "5:00 pm - 10:00 pm",
+      "isOpen": true
+    },
+    "Wednesday": {
+      "hours": "5:00 pm - 10:00 pm",
+      "isOpen": true
+    },
+    "Thursday": {
+      "hours": "5:00 pm - 10:00 pm",
+      "isOpen": true
+    },
+    "Friday": {
+      "hours": "5:00 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Saturday": {
+      "hours": "5:00 pm - 11:00 pm",
+      "isOpen": true
+    },
+    "Sunday": {
+      "hours": "5:00 pm - 10:00 pm",
+      "isOpen": true
+    }
+  },
+  "owner": {
+    "$oid": "65aa9eac5e7211c08fed7ef8"
+  },
+  "reviews": [
+    {
+      "$oid": "65e7769c876d1fcf66f08198"
+    },
+    {
+      "$oid": "65e77dd4876d1fcf66f08218"
+    },
+    {
+      "$oid": "65e77df5876d1fcf66f0821f"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709662799971"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669877385"
+    }
+  },
+  "__v": 0,
+  "address": "1209 Jackson Ave, Queens, NY 11101"
+},{
+  "_id": {
+    "$oid": "65e76269eb9966e44cc5b0e4"
+  },
+  "name": "Casa Enrique",
+  "neighborhood": "Queens",
+  "location": {
+    "type": "Point",
+    "coordinates": {
+      "lat": 40.743394,
+      "lng": -73.954235,
+      "_id": {
+        "$oid": "65e76269eb9966e44cc5b0e5"
+      }
+    }
+  },
+  "image": "https://i.pinimg.com/474x/47/b1/d3/47b1d3175589f19f58a35cfcd78b3e73--city-restaurants-mexican-restaurants.jpg",
+  "cuisineType": {
+    "$oid": "638f1d33b7f3872046553825"
+  },
+  "operatingHours": {
+    "Monday": {
+      "hours": "5:00 pm - 12:00 am",
+      "isOpen": true
+    },
+    "Tuesday": {
+      "hours": "5:00 pm - 12:00 am",
+      "isOpen": true
+    },
+    "Wednesday": {
+      "hours": "5:00 pm - 12:00 am",
+      "isOpen": true
+    },
+    "Thursday": {
+      "hours": "5:00 pm - 12:00 am",
+      "isOpen": true
+    },
+    "Friday": {
+      "hours": "5:00 pm - 12:00 am",
+      "isOpen": true
+    },
+    "Saturday": {
+      "hours": "11:00 am - 12:00 am",
+      "isOpen": true
+    },
+    "Sunday": {
+      "hours": "11:00 am - 12:00 am",
+      "isOpen": true
+    }
+  },
+  "owner": {
+    "$oid": "65aa9eac5e7211c08fed7ef8"
+  },
+  "reviews": [
+    {
+      "$oid": "65e776bc876d1fcf66f0819c"
+    },
+    {
+      "$oid": "65e77984876d1fcf66f081af"
+    },
+    {
+      "$oid": "65e77e31876d1fcf66f08226"
+    },
+    {
+      "$oid": "65ecec982708d75463c06911"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709662825748"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1710184312357"
+    }
+  },
+  "__v": 0,
+  "address": "5-48 49th Ave, Queens, NY 11101"
+}]

@@ -9,6 +9,7 @@
 - 📖 [Installation](#installation)
 - 📚 [Environment Variables](#environment-variables)
 - 📍 [Postman Collection](#postman-collection)
+- 📦 [Database Collection](#db-info)
 - 💻 [Application Routes](#application-routes)
 - ✨ [Contributors](#contributors)
 
@@ -31,6 +32,10 @@ You will need to create a .env (or .env.local) file if you want to run this proj
 ## Postman Collection
 
 In the root directory of the project, you will find a JSON file called "wecookin.postman_collection.json". Throughout the development of this project, Postman is used to test our API. This file can be imported directly as a collection in Postman to view all the testing work. The requests are organized by folders according to their corresponding routes. Each request includes different samples of responses.
+
+## Database Collection
+
+In the project's root directory, there's a folder named "DBInfo" containing JSON files. Use these files to populate your database with the essential information required for this project.
 
 ## Application Routes:
 
@@ -67,9 +72,9 @@ In the root directory of the project, you will find a JSON file called "wecookin
 
 ## **Cuisines Routes**:
 
-|    URL path    | HTTP Method |      Action      | Protected |
-| :------------: | :---------: | :--------------: | :-------: |
-| /api/cuisines  |     GET     | Get All Cuisines |    ❌     |
+|   URL path    | HTTP Method |      Action      | Protected |
+| :-----------: | :---------: | :--------------: | :-------: |
+| /api/cuisines |     GET     | Get All Cuisines |    ❌     |
 
 ## **Reviews Routes**:
 
@@ -93,3 +98,5 @@ In the root directory of the project, you will find a JSON file called "wecookin
     </tr>
   </tbody>
 </table>
+
+This challenge has been developed by Jadde Suarez for [Tailor Hub](https://github.com/TailorHub-Mad/TailorChallenge/blob/master/instructions.md).

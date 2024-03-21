@@ -1,0 +1,141 @@
+[{
+  "_id": {
+    "$oid": "638f1caeb7f3872046553815"
+  },
+  "cuisine": "Cajun"
+},{
+  "_id": {
+    "$oid": "638f1cedb7f387204655381c"
+  },
+  "cuisine": "Greek"
+},{
+  "_id": {
+    "$oid": "638f1d0bb7f3872046553820"
+  },
+  "cuisine": "Japanese"
+},{
+  "_id": {
+    "$oid": "638f1d52b7f3872046553829"
+  },
+  "cuisine": "Spanish"
+},{
+  "_id": {
+    "$oid": "638f1ca3b7f3872046553814"
+  },
+  "cuisine": "British"
+},{
+  "_id": {
+    "$oid": "638f1c8bb7f3872046553813"
+  },
+  "cuisine": "American"
+},{
+  "_id": {
+    "$oid": "638f1cc3b7f3872046553817"
+  },
+  "cuisine": "Chinese"
+},{
+  "_id": {
+    "$oid": "638f1cceb7f3872046553818"
+  },
+  "cuisine": "Eastern European"
+},{
+  "_id": {
+    "$oid": "638f1cd6b7f3872046553819"
+  },
+  "cuisine": "European"
+},{
+  "_id": {
+    "$oid": "638f1cfcb7f387204655381e"
+  },
+  "cuisine": "Irish"
+},{
+  "_id": {
+    "$oid": "638f1d04b7f387204655381f"
+  },
+  "cuisine": "Italian"
+},{
+  "_id": {
+    "$oid": "638f1d25b7f3872046553823"
+  },
+  "cuisine": "Latin American"
+},{
+  "_id": {
+    "$oid": "638f1d2bb7f3872046553824"
+  },
+  "cuisine": "Mediterranean"
+},{
+  "_id": {
+    "$oid": "638f1d3cb7f3872046553826"
+  },
+  "cuisine": "Middle Eastern"
+},{
+  "_id": {
+    "$oid": "638f1d4cb7f3872046553828"
+  },
+  "cuisine": "Southern"
+},{
+  "_id": {
+    "$oid": "638f1d5ab7f387204655382a"
+  },
+  "cuisine": "Thai"
+},{
+  "_id": {
+    "$oid": "638f1cb9b7f3872046553816"
+  },
+  "cuisine": "Caribbean"
+},{
+  "_id": {
+    "$oid": "638f1ce4b7f387204655381b"
+  },
+  "cuisine": "German"
+},{
+  "_id": {
+    "$oid": "638f1cf4b7f387204655381d"
+  },
+  "cuisine": "Indian"
+},{
+  "_id": {
+    "$oid": "638f1d16b7f3872046553821"
+  },
+  "cuisine": "Jewish"
+},{
+  "_id": {
+    "$oid": "638f1d1db7f3872046553822"
+  },
+  "cuisine": "Korean"
+},{
+  "_id": {
+    "$oid": "638f1c18b7f3872046553812"
+  },
+  "cuisine": "African"
+},{
+  "_id": {
+    "$oid": "638f1cddb7f387204655381a"
+  },
+  "cuisine": "French"
+},{
+  "_id": {
+    "$oid": "638f1d33b7f3872046553825"
+  },
+  "cuisine": "Mexican"
+},{
+  "_id": {
+    "$oid": "638f1d44b7f3872046553827"
+  },
+  "cuisine": "Nordic"
+},{
+  "_id": {
+    "$oid": "638f1d62b7f387204655382b"
+  },
+  "cuisine": "Vietnamese"
+},{
+  "_id": {
+    "$oid": "65e73470cfab525b3b148636"
+  },
+  "cuisine": "Pizza"
+},{
+  "_id": {
+    "$oid": "65e734d2cfab525b3b148637"
+  },
+  "cuisine": "Asian"
+}]

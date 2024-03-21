@@ -1,0 +1,465 @@
+[{
+  "_id": {
+    "$oid": "65aa9eac5e7211c08fed7ef8"
+  },
+  "username": "yayi",
+  "email": "yayi@gmail.com",
+  "password": "$2a$10$73UQyByCpcmOtKcQXlQcoeERfEapqGxpOxvWZ43CNhs1zzubsTvN2",
+  "avatar": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80",
+  "favoriteRestaurants": [
+    {
+      "$oid": "65e7617aeb9966e44cc5b0c0"
+    },
+    {
+      "$oid": "65e761bfeb9966e44cc5b0c4"
+    },
+    {
+      "$oid": "65e761d3eb9966e44cc5b0c8"
+    },
+    {
+      "$oid": "65e761fceb9966e44cc5b0d0"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1705680556055"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1710331579223"
+    }
+  },
+  "__v": 0,
+  "role": "ADMIN"
+},{
+  "_id": {
+    "$oid": "65e7512ff226b066d0c7f3d3"
+  },
+  "username": "Steve",
+  "email": "steve@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$BkOc2PDZzCbPfQ7wXMO3qe1uAaix1FxAd870c2iE7XywflW4drJl.",
+  "avatar": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "favoriteRestaurants": [
+    {
+      "$oid": "65e76218eb9966e44cc5b0d4"
+    },
+    {
+      "$oid": "65e7623deb9966e44cc5b0dc"
+    },
+    {
+      "$oid": "65e7617aeb9966e44cc5b0c0"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709658415419"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1710362936151"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e777d9876d1fcf66f081a0"
+  },
+  "username": "Morgan",
+  "email": "morgan@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$x0ttNDl3roZdcqKBFi.lDeAQrkvStGyzwTRIIJfPEJcXQ3W/tpVSm",
+  "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709668313862"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709668313862"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e778c6876d1fcf66f081a7"
+  },
+  "username": "Jason",
+  "email": "jason@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$ezLYEYa8DDLgCcS9Xkca0ehx9zhCQRDi2qX3k4Q.LL4EDoLW8P3ai",
+  "avatar": "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709668550362"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709668550362"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e779ac876d1fcf66f081b3"
+  },
+  "username": "Steph",
+  "email": "steph@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$lAl.BAoSDAR7EuepFbUg1.RLUWeilctp8W5sMPHkGQdUwNLMTP5fO",
+  "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709668780581"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709668780581"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77a12876d1fcf66f081ba"
+  },
+  "username": "Sam",
+  "email": "sam@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$41dgSxTtZ28svG0TmdMxNeqvd2b6Gqw89GeH9XegEG8rGramnDn0G",
+  "avatar": "https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709668882665"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709668882665"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77a63876d1fcf66f081c1"
+  },
+  "username": "ZS",
+  "email": "zs@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$zlnt1e50rocKoJcZQLpxwectk3ZgDvyihntWU5PKy6/2oi40vCQ3q",
+  "avatar": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709668963334"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709668963334"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77aad876d1fcf66f081c8"
+  },
+  "username": "Emily",
+  "email": "emily@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$2LVWAs3cfbasncccMm//ueflBj/h4ARSKTwT2GR54.URqcJ3tg8zK",
+  "avatar": "https://images.unsplash.com/photo-1598346762291-aee88549193f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669037586"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669037586"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77b77876d1fcf66f081cf"
+  },
+  "username": "Allen",
+  "email": "allen@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$2CqufoL0vaO7.5RuYxZDN.5q2ZBQ/7bam4RNT1mdT4rRKziCFvu8.",
+  "avatar": "https://res.cloudinary.com/dagndlfhj/image/upload/v1684765456/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector_q1ax7i.jpg",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669239862"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669239862"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77bcb876d1fcf66f081d6"
+  },
+  "username": "David",
+  "email": "david@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$Ee3znvVGwKkZffFhTRsNJu2ocLGrKUr/Mh.nM99A7Wvp0HO65E/YG",
+  "avatar": "https://images.unsplash.com/photo-1601455763557-db1bea8a9a5a?q=80&w=3012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669323435"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669323435"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77c11876d1fcf66f081dd"
+  },
+  "username": "Raymond",
+  "email": "raymond@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$i0nkGtcRNrUB9FsPiF7xTeuNiEZEvaDrmPM/qIzzb9C5RsKy3yoMa",
+  "avatar": "https://res.cloudinary.com/dagndlfhj/image/upload/v1684765456/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector_q1ax7i.jpg",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669393428"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669393428"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77c43876d1fcf66f081e4"
+  },
+  "username": "Laurel",
+  "email": "laurel@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$U1jr2FmrYwZt..UU.B/64OTeyZOU.y8tpJWgdOP7zTHPjnMrq/zkW",
+  "avatar": "https://res.cloudinary.com/dagndlfhj/image/upload/v1684765456/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector_q1ax7i.jpg",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669443733"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669443733"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77c85876d1fcf66f081eb"
+  },
+  "username": "Michelle",
+  "email": "michelle@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$ko2Lar88ssoOdg1RvUSqa.uck8zn5y/V24Z.BJYAqsj..Ao/rNj0W",
+  "avatar": "https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669509921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669509921"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77cb2876d1fcf66f081f2"
+  },
+  "username": "Ai-Mei",
+  "email": "ai-mei@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$VALO8D02f.Gjv5N18fo8.OE54n75ACL9nPVtKPzmdoyRw8X26g6hC",
+  "avatar": "https://res.cloudinary.com/dagndlfhj/image/upload/v1684765456/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector_q1ax7i.jpg",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669554760"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669554760"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77cef876d1fcf66f081f9"
+  },
+  "username": "Gabriel",
+  "email": "gabriel@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$CHD8wD3YkBm8a5vfbtK3r.4WMig9WYGHtCn0NrIp4SocJnSl3lFOe",
+  "avatar": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669615803"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669615803"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77d18876d1fcf66f08200"
+  },
+  "username": "Shivi",
+  "email": "shivi@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$WL5HVMXiWdpWPIhlB4jWEOXfu2QxQSnzYwCt2ML7brtR0zvQXNcde",
+  "avatar": "https://res.cloudinary.com/dagndlfhj/image/upload/v1684765456/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector_q1ax7i.jpg",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669656757"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669656757"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77d5d876d1fcf66f08207"
+  },
+  "username": "Loren",
+  "email": "loren@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$Nd7Yrg/yN3djJ/2n8hcXUebw5Xa6wDFqXRudgb8hYsiFUSqcGLL7G",
+  "avatar": "https://res.cloudinary.com/dagndlfhj/image/upload/v1684765456/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector_q1ax7i.jpg",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669725018"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669725018"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77d85876d1fcf66f0820e"
+  },
+  "username": "Lori",
+  "email": "lori@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$xdty8KJj1nv36VWp4SZ6UO8F1dzJ/UPu3nFK5UWsusYB/lrJTRrKa",
+  "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2861&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669765836"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669765836"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77dc9876d1fcf66f08215"
+  },
+  "username": "Brittany",
+  "email": "brittany@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$WSXr1XBgpj51ddn23RuQBOKJUXG6Ah4NtJchUsVs99z49WKH8lnBW",
+  "avatar": "https://res.cloudinary.com/dagndlfhj/image/upload/v1684765456/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector_q1ax7i.jpg",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669833640"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669833640"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77de5876d1fcf66f0821c"
+  },
+  "username": "Sally",
+  "email": "sally@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$aad7euONKayU0sfYOzUd6ea8/chFRzZdENkqlfCm3CaCJgD.i3ASK",
+  "avatar": "https://res.cloudinary.com/dagndlfhj/image/upload/v1684765456/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector_q1ax7i.jpg",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669861123"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669861123"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65e77e1c876d1fcf66f08223"
+  },
+  "username": "Rob",
+  "email": "rob@gmail.com",
+  "role": "USER",
+  "password": "$2a$10$NGNzgVcPGrQZ4/ZnGi6I5OiWv6yff4YgRGanVcpbc9tthEo5q8HOW",
+  "avatar": "https://res.cloudinary.com/dagndlfhj/image/upload/v1684765456/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector_q1ax7i.jpg",
+  "favoriteRestaurants": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1709669916324"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1709669916324"
+    }
+  },
+  "__v": 0
+}]
